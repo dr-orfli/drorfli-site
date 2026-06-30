@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>DR.ORFLI · A Private Invitation for Şevval — Rixos Radamis Sharm El Sheikh</title>
+<meta name="description" content="A personalised VIP concierge proposal prepared by DR.ORFLI Productions for Şevval — Rixos Radamis Sharm El Sheikh, Ultra All-Inclusive on the Red Sea." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cinzel:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --black:#0B0B0C; --black2:#121214; --black3:#17171a; --panel:#141416;
+  --gold:#C9A24B; --gold-2:#E7C873; --gold-3:#9A7B2E;
+  --goldgrad:linear-gradient(135deg,#F0D98A 0%,#C9A24B 45%,#9A7B2E 100%);
+  --white:#FAF7F0; --muted:#B7B0A2; --muted2:#85806f; --line:rgba(201,162,75,.28); --line2:rgba(255,255,255,.08);
+  --serif:'Cormorant Garamond',Georgia,serif; --brand:'Cinzel',serif; --sans:'Inter',system-ui,Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--black);color:var(--white);font-family:var(--sans);font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1180px;margin:0 auto;padding:0 40px}
+.gold{color:var(--gold)}
+.serif{font-family:var(--serif)}
+h1,h2,h3{font-weight:400;line-height:1.1}
+.eyebrow{font-family:var(--sans);font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);font-weight:600;display:inline-flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:34px;height:1px;background:var(--goldgrad)}
+.rule{height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent);border:0;margin:0}
+
+/* ---------- NAV ---------- */
+nav{position:sticky;top:0;z-index:90;background:rgba(11,11,12,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line2)}
+.nav-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 32px;gap:18px}
+.brand{display:flex;flex-direction:column;line-height:1;flex:none}
+.brand b{font-family:var(--brand);font-weight:700;font-size:18px;letter-spacing:.12em;background:var(--goldgrad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.brand span{font-size:8px;letter-spacing:.42em;color:var(--muted2);margin-top:4px;text-transform:uppercase;padding-left:2px}
+.nav-links{display:flex;gap:22px;flex-wrap:wrap;justify-content:center;flex:1}
+.nav-links a{font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);position:relative;padding:4px 0;transition:color .25s;white-space:nowrap}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--goldgrad);transition:width .3s}
+.nav-links a:hover,.nav-links a.active{color:var(--gold)}
+.nav-links a:hover::after,.nav-links a.active::after{width:100%}
+.nav-actions{display:flex;gap:10px;flex:none}
+.btn{font-family:var(--sans);font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;padding:10px 16px;border-radius:2px;cursor:pointer;border:1px solid var(--line);background:transparent;color:var(--gold);transition:all .25s;display:inline-flex;align-items:center;gap:8px;white-space:nowrap}
+.btn:hover{background:var(--gold);color:var(--black);border-color:var(--gold)}
+.btn.solid{background:var(--goldgrad);color:var(--black);border:none}
+.btn.solid:hover{filter:brightness(1.08)}
+.btn svg{width:14px;height:14px;fill:currentColor}
+.menu-toggle{display:none;background:none;border:1px solid var(--line);color:var(--gold);width:42px;height:38px;border-radius:2px;cursor:pointer}
+
+/* ---------- SECTION SHELL ---------- */
+section{position:relative;padding:108px 0;border-bottom:1px solid var(--line2)}
+.sec-mark{position:absolute;top:34px;right:40px;font-family:var(--serif);font-size:13px;letter-spacing:.3em;color:var(--muted2);text-transform:uppercase}
+.sec-mark b{font-family:var(--brand);color:var(--gold);font-weight:600;letter-spacing:.12em}
+.pagenum{position:absolute;top:34px;left:40px;font-family:var(--serif);font-style:italic;font-size:42px;color:rgba(201,162,75,.16);font-weight:500}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+.h-title{font-family:var(--serif);font-size:clamp(34px,5vw,60px);font-weight:600;letter-spacing:.5px;margin:14px 0 6px}
+.h-title em{font-style:italic;color:var(--gold)}
+.lead{font-family:var(--serif);font-size:clamp(18px,2.2vw,23px);color:#e9e4d8;font-weight:400;max-width:760px;line-height:1.5}
+.muted{color:var(--muted)}
+p.body{font-size:15px;color:var(--muted);max-width:760px;margin-top:16px;font-weight:300}
+p.body strong{color:var(--white);font-weight:500}
+
+/* source chips */
+.src{display:inline-flex;align-items:center;gap:6px;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted2);border:1px solid var(--line2);border-radius:40px;padding:4px 10px;margin:6px 6px 0 0;transition:all .25s}
+.src:hover{color:var(--gold);border-color:var(--line)}
+.src::before{content:"◆";font-size:7px;color:var(--gold)}
+
+/* ---------- HERO ---------- */
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:120px 0 70px;border-bottom:1px solid var(--line2);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(1100px 600px at 78% 18%,rgba(201,162,75,.14),transparent 60%),radial-gradient(900px 500px at 12% 92%,rgba(201,162,75,.08),transparent 60%)}
+.hero::after{content:"RIXOS";position:absolute;right:-3vw;bottom:-4vh;font-family:var(--serif);font-weight:700;font-size:26vw;line-height:.8;color:rgba(255,255,255,.025);letter-spacing:-1vw;pointer-events:none}
+.hero .wrap{position:relative;z-index:2}
+.hero-badge{display:inline-flex;align-items:center;gap:14px;border:1px solid var(--line);border-radius:40px;padding:9px 18px;margin-bottom:34px}
+.hero-badge b{font-family:var(--brand);font-size:13px;letter-spacing:.14em;background:var(--goldgrad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-badge span{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted)}
+.hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(46px,8.5vw,104px);letter-spacing:1px;line-height:.98}
+.hero h1 em{font-style:italic;color:var(--gold);display:block}
+.hero-sub{font-family:var(--serif);font-size:clamp(19px,2.6vw,27px);color:#e9e4d8;margin-top:26px;max-width:680px;font-weight:400;line-height:1.45}
+.hero-meta{display:flex;flex-wrap:wrap;gap:26px;margin-top:42px}
+.hero-meta div{border-left:1px solid var(--line);padding-left:16px}
+.hero-meta .k{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+.hero-meta .v{font-family:var(--serif);font-size:19px;color:var(--white);margin-top:3px}
+.scrollcue{margin-top:54px;display:inline-flex;align-items:center;gap:12px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.scrollcue .dot{width:22px;height:34px;border:1px solid var(--line);border-radius:14px;position:relative}
+.scrollcue .dot::after{content:"";position:absolute;left:50%;top:7px;transform:translateX(-50%);width:3px;height:7px;border-radius:2px;background:var(--gold);animation:cue 1.7s infinite}
+@keyframes cue{0%{opacity:0;transform:translate(-50%,0)}40%{opacity:1}100%{opacity:0;transform:translate(-50%,12px)}}
+
+/* welcome letter */
+.letter{background:linear-gradient(180deg,var(--black2),var(--black));border:1px solid var(--line2);border-top:2px solid transparent;border-image:var(--goldgrad) 1;padding:48px 50px;margin-top:8px;position:relative}
+.letter .quote{font-family:var(--serif);font-style:italic;font-size:clamp(20px,2.6vw,28px);color:#efe9dc;line-height:1.5}
+.letter .sign{margin-top:30px;display:flex;align-items:center;gap:16px}
+.letter .sign .nm{font-family:var(--brand);font-size:16px;letter-spacing:.1em;color:var(--gold)}
+.letter .sign .rl{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted2)}
+
+/* ---------- GRIDS / CARDS ---------- */
+.grid{display:grid;gap:22px;margin-top:42px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:linear-gradient(180deg,var(--panel),var(--black2));border:1px solid var(--line2);border-radius:3px;padding:26px;transition:transform .4s,border-color .4s,box-shadow .4s;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;left:0;top:0;height:2px;width:0;background:var(--goldgrad);transition:width .5s}
+.card:hover{transform:translateY(-5px);border-color:var(--line);box-shadow:0 24px 50px -28px rgba(0,0,0,.8)}
+.card:hover::before{width:100%}
+.card .ic{width:42px;height:42px;border:1px solid var(--line);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.card .ic svg{width:20px;height:20px;stroke:var(--gold);fill:none;stroke-width:1.4}
+.card h3{font-family:var(--serif);font-size:23px;color:var(--white);margin-bottom:8px;font-weight:600}
+.card p{font-size:13.5px;color:var(--muted);font-weight:300}
+.tag{display:inline-block;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);border:1px solid var(--line);border-radius:30px;padding:3px 9px;margin-top:12px}
+.tag.cost{color:#e7b05a;border-color:rgba(231,176,90,.4)}
+
+/* stat band */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line2);border:1px solid var(--line2);margin-top:42px}
+.stats div{background:var(--black);padding:30px 22px;text-align:center}
+.stats .n{font-family:var(--serif);font-size:clamp(30px,4vw,46px);font-weight:600;background:var(--goldgrad);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1}
+.stats .l{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:10px}
+
+/* feature list */
+.flist{margin-top:30px;display:grid;gap:0}
+.frow{display:grid;grid-template-columns:200px 1fr;gap:24px;padding:18px 0;border-bottom:1px solid var(--line2)}
+.frow .ft{font-family:var(--serif);font-size:19px;color:var(--gold);font-weight:600}
+.frow .fd{font-size:14px;color:var(--muted)}
+.frow .fd b{color:var(--white);font-weight:500}
+
+/* dining list */
+.dine{display:grid;grid-template-columns:repeat(2,1fr);gap:0 46px;margin-top:34px}
+.dish{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid var(--line2)}
+.dish .nm{font-family:var(--serif);font-size:20px;color:var(--white);font-weight:600;min-width:118px}
+.dish .ds{font-size:12.5px;color:var(--muted);flex:1}
+.dish .cu{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);white-space:nowrap}
+
+/* aquamania ride cards */
+.rides{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:32px}
+.ride{border:1px solid var(--line2);border-radius:3px;padding:22px;background:linear-gradient(180deg,rgba(201,162,75,.05),transparent)}
+.ride .rk{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.ride .rn{font-family:var(--serif);font-size:22px;color:var(--white);margin:6px 0;font-weight:600}
+.ride .rd{font-size:12.5px;color:var(--muted)}
+
+/* highlight callout */
+.callout{margin-top:40px;border:1px solid var(--line);border-left:3px solid var(--gold);background:linear-gradient(110deg,rgba(201,162,75,.08),transparent 70%);padding:28px 32px;border-radius:2px}
+.callout .ct{font-family:var(--sans);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.callout p{font-family:var(--serif);font-size:clamp(17px,2vw,21px);color:#efe9dc;margin-top:10px;line-height:1.5}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+.gcard{position:relative;border:1px solid var(--line2);border-radius:3px;overflow:hidden;aspect-ratio:4/3;background:
+   radial-gradient(120% 120% at 80% 0%,rgba(201,162,75,.16),transparent 55%),
+   linear-gradient(180deg,#191915,#0e0e0f);display:flex;flex-direction:column;justify-content:flex-end;padding:22px;transition:transform .4s,border-color .4s}
+.gcard:hover{transform:translateY(-5px);border-color:var(--gold)}
+.gcard .gi{position:absolute;top:18px;left:18px;width:40px;height:40px;border:1px solid var(--line);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.gcard .gi svg{width:20px;height:20px;stroke:var(--gold);fill:none;stroke-width:1.3}
+.gcard h4{font-family:var(--serif);font-size:21px;color:var(--white);font-weight:600}
+.gcard p{font-size:12px;color:var(--muted);margin-top:4px}
+.gcard .view{margin-top:12px;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);display:inline-flex;align-items:center;gap:7px}
+.gcard .view svg{width:13px;height:13px;stroke:var(--gold);fill:none;stroke-width:1.6}
+.gcard .pill{position:absolute;top:18px;right:18px;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted2);border:1px solid var(--line2);border-radius:30px;padding:3px 8px;background:rgba(0,0,0,.4)}
+
+/* FAQ */
+.faq{margin-top:40px;border-top:1px solid var(--line2)}
+.qa{border-bottom:1px solid var(--line2)}
+.qa.key{border-left:2px solid var(--gold);background:linear-gradient(100deg,rgba(201,162,75,.06),transparent 60%)}
+.q{width:100%;text-align:left;background:none;border:none;color:var(--white);cursor:pointer;padding:24px 54px 24px 22px;font-family:var(--serif);font-size:clamp(18px,2.1vw,23px);font-weight:600;position:relative;display:flex;gap:14px;align-items:flex-start}
+.q .qmark{color:var(--gold);font-size:14px;font-family:var(--sans);letter-spacing:.1em;margin-top:6px}
+.q::after{content:"+";position:absolute;right:22px;top:50%;transform:translateY(-50%);font-size:26px;color:var(--gold);font-weight:300;transition:transform .3s;font-family:var(--sans)}
+.qa.open .q::after{transform:translateY(-50%) rotate(45deg)}
+.a{max-height:0;overflow:hidden;transition:max-height .5s ease}
+.a-inner{padding:0 22px 26px 50px;font-size:14.5px;color:var(--muted);line-height:1.75}
+.a-inner strong{color:var(--white);font-weight:500}
+.a-inner .src{margin-top:12px}
+.badge-yes{display:inline-block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:#0B0B0C;background:var(--goldgrad);padding:4px 10px;border-radius:30px;margin-bottom:12px}
+
+/* links section */
+.links{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:40px}
+.lk{display:flex;align-items:center;gap:18px;border:1px solid var(--line2);border-radius:3px;padding:20px 24px;transition:all .3s;background:linear-gradient(180deg,var(--panel),var(--black2))}
+.lk:hover{border-color:var(--gold);transform:translateX(4px)}
+.lk .lkic{width:44px;height:44px;border:1px solid var(--line);border-radius:50%;display:flex;align-items:center;justify-content:center;flex:none}
+.lk .lkic svg{width:20px;height:20px;stroke:var(--gold);fill:none;stroke-width:1.4}
+.lk .lt{font-family:var(--serif);font-size:20px;color:var(--white);font-weight:600}
+.lk .ld{font-size:12px;color:var(--muted)}
+.lk .arr{margin-left:auto;color:var(--gold);font-size:20px}
+
+/* contact strip */
+.contact{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
+.cc{border:1px solid var(--line2);border-radius:3px;padding:20px;text-align:center}
+.cc .k{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.cc .v{font-family:var(--serif);font-size:17px;color:var(--white);margin-top:6px;word-break:break-word}
+
+/* footer */
+footer{padding:70px 0 50px;background:var(--black2);border-top:1px solid var(--line)}
+.foot-brand b{font-family:var(--brand);font-size:30px;letter-spacing:.14em;background:var(--goldgrad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.foot-brand span{display:block;font-size:10px;letter-spacing:.4em;color:var(--muted2);margin-top:6px;text-transform:uppercase}
+.disclaimer{font-size:11.5px;color:var(--muted2);max-width:880px;margin-top:26px;line-height:1.7}
+.disclaimer a{color:var(--gold)}
+
+/* toast */
+#toast{position:fixed;left:50%;bottom:34px;transform:translateX(-50%) translateY(30px);background:var(--gold);color:var(--black);font-size:13px;font-weight:600;letter-spacing:.04em;padding:13px 24px;border-radius:3px;opacity:0;pointer-events:none;transition:all .4s;z-index:200}
+#toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* progress bar */
+#progress{position:fixed;top:0;left:0;height:2px;width:0;background:var(--goldgrad);z-index:120}
+
+/* ---------- RESPONSIVE ---------- */
+@media(max-width:960px){
+  .wrap{padding:0 22px}
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:rgba(11,11,12,.98);flex-direction:column;align-items:flex-start;gap:0;padding:10px 22px 22px;border-bottom:1px solid var(--line)}
+  .nav-links.show{display:flex}
+  .nav-links a{padding:13px 0;width:100%;border-bottom:1px solid var(--line2)}
+  .menu-toggle{display:block}
+  .g2,.g3,.g4,.dine,.rides,.gal,.links,.contact,.stats{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .frow{grid-template-columns:1fr;gap:6px}
+  .pagenum,.sec-mark{position:static;display:inline-block;margin-bottom:8px}
+  .letter{padding:30px 24px}
+  section{padding:74px 0}
+  .nav-actions .btn span{display:none}
+}
+@media(max-width:520px){.stats{grid-template-columns:1fr}}
+
+/* ---------- PRINT (Landscape, magazine) ---------- */
+@media print{
+  @page{size:A4 landscape;margin:12mm}
+  *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+  nav,.nav-actions,.menu-toggle,#progress,#toast,.scrollcue{display:none!important}
+  body{background:var(--black)!important}
+  section,.hero{page-break-inside:avoid;break-inside:avoid;padding:26px 0;min-height:auto;border-bottom:1px solid var(--line)}
+  .hero{min-height:auto}
+  .reveal{opacity:1!important;transform:none!important}
+  .card:hover,.gcard:hover,.lk:hover{transform:none!important}
+  .a{max-height:none!important}
+  .qa .q::after{display:none}
+  a[href]::after{content:""}
+  .print-foot{display:block!important}
+}
+.print-foot{display:none;text-align:center;font-family:var(--brand);font-size:10px;letter-spacing:.3em;color:var(--muted2);padding-top:10px}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+
+<!-- ================= NAV ================= -->
+<nav>
+  <div class="nav-inner">
+    <a href="#top" class="brand"><b>DR.ORFLI</b><span>Productions · Private Concierge</span></a>
+    <div class="nav-links" id="navlinks">
+      <a href="#welcome">Welcome</a>
+      <a href="#why">Why Rixos</a>
+      <a href="#rooms">Rooms</a>
+      <a href="#dining">Dining</a>
+      <a href="#aquamania">Aquamania</a>
+      <a href="#beach">Beach &amp; Pools</a>
+      <a href="#kids">Kids</a>
+      <a href="#spa">Spa</a>
+      <a href="#faq">FAQ</a>
+      <a href="#links">Links</a>
+    </div>
+    <div class="nav-actions">
+      <button class="btn" id="shareBtn"><svg viewBox="0 0 24 24"><path d="M18 8a3 3 0 1 0-2.8-4H15a3 3 0 0 0 .2 1.1L8.9 8.6a3 3 0 1 0 0 6.8l6.3 3.6A3 3 0 1 0 18 16a3 3 0 0 0-2.1.9l-6.3-3.6a3 3 0 0 0 0-2.6l6.3-3.6A3 3 0 0 0 18 8Z"/></svg><span>Share</span></button>
+      <button class="btn solid" id="pdfBtn"><svg viewBox="0 0 24 24"><path d="M12 16l-5-5h3V4h4v7h3l-5 5zm-7 2h14v2H5v-2z"/></svg><span>Download PDF</span></button>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
+  </div>
+</nav>
+
+<!-- ================= HERO / PAGE 1 ================= -->
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-badge"><b>DR.ORFLI</b><span>Curated for Şevval · Türkiye 🇹🇷</span></div>
+    <h1>Rixos Radamis<em>Sharm El Sheikh</em></h1>
+    <p class="hero-sub">A private, hand-prepared invitation to the Red Sea’s most spirited family paradise — with every question answered, honestly, from official sources.</p>
+    <div class="hero-meta">
+      <div><div class="k">Concept</div><div class="v">Ultra All-Inclusive</div></div>
+      <div><div class="k">Setting</div><div class="v">Nabq Bay · Red Sea</div></div>
+      <div><div class="k">From the airport</div><div class="v">≈ 10 minutes</div></div>
+      <div><div class="k">Prepared by</div><div class="v">DR.ORFLI Productions</div></div>
+    </div>
+    <div class="scrollcue"><span class="dot"></span> Scroll to begin your journey</div>
+  </div>
+</header>
+
+<!-- ================= WELCOME / PERSONAL LETTER ================= -->
+<section id="welcome">
+  <div class="pagenum">01</div><div class="sec-mark"><b>DR.ORFLI</b> · Welcome</div>
+  <div class="wrap reveal">
+    <span class="eyebrow">A personal note</span>
+    <h2 class="h-title">Hello Şevval — <em>let me put your mind at ease.</em></h2>
+    <p class="lead">You told me you loved the look of Rixos Radamis but hadn’t found reassuring reviews, and you’d heard you might need to reserve the water park. So I did the work for you — only official sources — and the short version is wonderful news.</p>
+    <div class="letter">
+      <p class="quote">“I personally recommend Rixos Radamis because it is built for exactly the holiday you’re imagining: a brand-new <span class="gold">35,000 m² aquapark</span> and 28 slides included in your stay, fifteen restaurants, a private Red Sea beach, and a children’s world that families rave about. The ‘reservation’ you heard about is simply for the à-la-carte specialty restaurants — not for general access to the water park, which is included in your Ultra All-Inclusive. Everything below is sourced, linked and yours to verify.”</p>
+      <div class="sign">
+        <div style="width:46px;height:1px;background:var(--goldgrad)"></div>
+        <div><div class="nm">Mohammed Ahmad Orfli</div><div class="rl">Founder &amp; CEO · DR.ORFLI Productions</div></div>
+      </div>
+    </div>
+    <div>
+      <a class="src" href="https://www.businesstraveller.com/news/rixos-radamis-sharm-el-sheikh-opens-aquamania-jungle-park/" target="_blank" rel="noopener">Source · Business Traveller</a>
+      <a class="src" href="https://www.rixos.com/hotel-resort/rixos-radamis-sharm-el-sheikh" target="_blank" rel="noopener">Source · Rixos Official</a>
+      <a class="src" href="https://www.rixos.com/la-carte-restaurants-reservation-policy" target="_blank" rel="noopener">Source · À-la-carte Reservation Policy</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY / PAGE 2 ================= -->
+<section id="why">
+  <div class="pagenum">02</div><div class="sec-mark"><b>DR.ORFLI</b> · The Overview</div>
+  <div class="wrap reveal">
+    <span class="eyebrow">Why Rixos Radamis</span>
+    <h2 class="h-title">A five-star <em>aqua paradise</em>, made for families.</h2>
+    <p class="lead">Rixos Radamis is a 5-star Ultra All-Inclusive resort on the first row of a private Red Sea beach in Nabq Bay — two connected wings (Blue Planet &amp; Tirana) whose facilities you’re free to enjoy in full.</p>
+    <div class="stats">
+      <div><div class="n">5★</div><div class="l">Luxury Resort</div></div>
+      <div><div class="n">15</div><div class="l">Restaurants</div></div>
+      <div><div class="n">28</div><div class="l">Water Slides</div></div>
+      <div><div class="n">≈10’</div><div class="l">From the Airport</div></div>
+    </div>
+    <div class="grid g3">
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 12h18M12 3v18"/><circle cx="12" cy="12" r="9"/></svg></div><h3>Ultra All-Inclusive</h3><p>One rate covers your room, dining across the resort, snacks &amp; drinks, entertainment, the kids’ clubs, the Turkish hammam and access to the new aquapark.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M2 20s4-9 10-9 10 9 10 9"/><path d="M12 3v8"/></svg></div><h3>Private Red Sea Beach</h3><p>First-row beachfront with its own private beach area, year-round outdoor pools, lush gardens and a calm bay famed for reef snorkelling.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a7 7 0 0 1 14 0c0 5.5-7 10-7 10z"/><circle cx="12" cy="11" r="2.4"/></svg></div><h3>Effortless to Reach</h3><p>Just minutes from Sharm El Sheikh International Airport — roughly a 10-minute transfer, one of the shortest on the Red Sea.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></svg></div><h3>Families &amp; Couples</h3><p>A dedicated family-friendly resort (the separate Rixos Sharm El Sheikh 18+ is the adults-only option a short drive away).</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2l2.5 6.5L21 9l-5 4 1.6 7L12 16l-5.6 4L8 13 3 9l6.5-.5z"/></svg></div><h3>Newly Built</h3><p>Opened in 2024 — modern, colourful rooms and contemporary facilities — with Aquamania Jungle Park added in March 2026.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg></div><h3>Two Connected Wings</h3><p>Blue Planet &amp; Tirana, linked by an underpass — guests enjoy the restaurants, pools and amenities of both as one resort.</p></div>
+    </div>
+    <div>
+      <a class="src" href="https://www.rixos.com/hotel-resort/rixos-radamis-sharm-el-sheikh" target="_blank" rel="noopener">Source · Rixos Official</a>
+      <a class="src" href="https://all.accor.com/hotel/C158/index.en.shtml" target="_blank" rel="noopener">Source · Accor (ALL)</a>
+      <a class="src" href="https://fromplacetoplace.travel/egypt/rixos-radamis/" target="_blank" rel="noopener">Source · Press / Property Detail</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ACCOMMODATION / PAGE 3 ================= -->
+<section id="rooms">
+  <div class="pagenum">03</div><div class="sec-mark"><b>DR.ORFLI</b> · Accommodation</div>
+  <div class="wrap reveal">
+    <span class="eyebrow">Where you’ll stay</span>
+    <h2 class="h-title">Colourful rooms &amp; <em>generous suites.</em></h2>
+    <p class="lead">From 40 m² Superior rooms to beachfront suites, every room includes a mini-bar refilled daily (water, soft drinks &amp; beer), IPTV, free Wi-Fi, robes &amp; slippers. Here are the categories I’d recommend for you.</p>
+    <div class="flist">
+      <div class="frow"><div class="ft">Superior · Blue Planet</div><div class="fd"><b>40 m²</b> · king or twin, modern design, branded bathroom amenities — a bright, easy base for two.</div></div>
+      <div class="frow"><div class="ft">Family Room · Blue Planet</div><div class="fd"><b>50 m²</b> · king + twin layout, sleeps up to four adults and one child — the family favourite.</div></div>
+      <div class="frow"><div class="ft">Junior Suite</div><div class="fd"><b>59–70 m²</b> · king bedroom connected to a living room, private terrace or balcony with garden or pool views.</div></div>
+      <div class="frow"><div class="ft">Senior Suite</div><div class="fd">Two bedrooms (king + twin) separated by a cosy living area — ideal for a family wanting more space.</div></div>
+      <div class="frow"><div class="ft">Deluxe / Premium · Beach Side</div><div class="fd">Elegant beach-side rooms with a living area and walk-in shower, closest to the sea and pools.</div></div>
+      <div class="frow"><div class="ft">Queen · Royal · Presidential</div><div class="fd">Signature beachfront suites with expansive living &amp; dining areas — the top of the house for a special celebration.</div></div>
+    </div>
+    <div class="callout"><div class="ct">Concierge tip</div><p>For your trip, the <span class="gold">Family Room Blue Planet (50 m²)</span> offers the best balance of space and value; if you’re travelling as a couple, a <span class="gold">Beach-Side Deluxe</span> keeps you steps from the sea.</p></div>
+    <div>
+      <a class="src" href="https://www.rixos.com/hotel-resort/rixos-radamis-sharm-el-sheikh" target="_blank" rel="noopener">Source · Rixos Official (Rooms &amp; Suites)</a>
+      <a class="src" href="https://all.accor.com/hotel/C158/index.en.shtml" target="_blank" rel="noopener">View rooms &amp; book · Accor</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DINING / PAGE 4 ================= -->
+<section id="dining">
+  <div class="pagenum">04</div><div class="sec-mark"><b>DR.ORFLI</b> · Dining</div>
+  <div class="wrap reveal">
+    <span class="eyebrow">A world of taste</span>
+    <h2 class="h-title">Fifteen restaurants — <em>including a taste of home.</em></h2>
+    <p class="lead">Buffets and specialty à-la-carte venues span the globe. As a little welcome from Türkiye, <span class="gold">Lalezar</span> serves traditional Turkish cuisine, and <span class="gold">Hayal</span> blends Lebanese, Turkish &amp; Moroccan flavours.</p>
+    <div class="dine">
+      <div class="dish"><div class="nm">Turquoise</div><div class="ds">Global open buffet · breakfast, lunch, dinner &amp; late buffet</div><div class="cu">Buffet</div></div>
+      <div class="dish"><div class="nm">Veranda</div><div class="ds">Main buffet — a symphony of world flavours</div><div class="cu">Buffet</div></div>
+      <div class="dish"><div class="nm">Lalezar</div><div class="ds">Traditional Türkiye — warm hospitality 🇹🇷</div><div class="cu">Turkish</div></div>
+      <div class="dish"><div class="nm">Hayal</div><div class="ds">Lebanese · Turkish · Moroccan</div><div class="cu">Levant</div></div>
+      <div class="dish"><div class="nm">Salt</div><div class="ds">Freshly caught Red Sea seafood</div><div class="cu">Seafood</div></div>
+      <div class="dish"><div class="nm">L’olivio</div><div class="ds">Homemade pasta &amp; wood-fired pizza</div><div class="cu">Italian</div></div>
+      <div class="dish"><div class="nm">Teppanyaki</div><div class="ds">Japanese grill as live theatre</div><div class="cu">Japanese</div></div>
+      <div class="dish"><div class="nm">Wabi Sabi</div><div class="ds">Authentic sushi &amp; Japanese classics</div><div class="cu">Sushi</div></div>
+      <div class="dish"><div class="nm">Mandarin</div><div class="ds">Aromatic, traditional Thai</div><div class="cu">Thai</div></div>
+      <div class="dish"><div class="nm">Cactus</div><div class="ds">Bold, fiery Mexican favourites</div><div class="cu">Mexican</div></div>
+      <div class="dish"><div class="nm">Riviera</div><div class="ds">Mediterranean classics</div><div class="cu">Mediterranean</div></div>
+      <div class="dish"><div class="nm">The Mangal</div><div class="ds">BBQ &amp; grilled specialties</div><div class="cu">Grill</div></div>
+      <div class="dish"><div class="nm">T-Bone</div><div class="ds">Premium steakhouse &amp; fine wines</div><div class="cu">Steak</div></div>
+      <div class="dish"><div class="nm">People’s</div><div class="ds">International dining, Red Sea views</div><div class="cu">International</div></div>
+      <div class="dish"><div class="nm">Rixy Kids</div><div class="ds">Child-friendly menus, playful setting</div><div class="cu">Kids</div></div>
+    </div>
+    <div class="callout"><div class="ct">Important — this answers your question</div><p>The à-la-carte specialty restaurants operate on a <span class="gold">reservation</span> system (Rixos publishes an official policy for this). It’s simple to arrange through <span class="gold">Guest Relations or Reception after check-in</span>. The buffets (Turquoise / Veranda) need no booking. <em>This is the “reservation” you heard about — not the water park.</em></p></div>
+    <p class="body"><strong>Bars &amp; lounges (8):</strong> Lobby Bar, Pool Bar, Beach Bar, Irish Pub, Candy Bar, plus Lobby &amp; Executive Lounges. <strong>Note:</strong> the <strong>E-Sport Café</strong> is the one venue marked “additional cost.” <span class="muted">Turquoise hours: 07:00–11:00 · 12:30–14:30 · 18:30–21:30 · 23:00–02:00.</span></p>
+    <div>
+      <a class="src" href="https://www.rixos.com/hotel-resort/rixos-radamis-sharm-el-sheikh" target="_blank" rel="noopener">Source · Rixos Official (Restaurants &amp; Bars)</a>
+      <a class="src" href="https://www.rixos.com/la-carte-restaurants-reservation-policy" target="_blank" rel="noopener">Source · À-la-carte Reservation Policy</a>
+      <a class="src" href="https://allinclusive-collection.com/hotel/rixos-radamis-sharm-el-sheikh/" target="_blank" rel="noopener">Source · All Inclusive Collection (hours)</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AQUAMANIA / PAGE 5 ================= -->
+<section id="aquamania">
+  <div class="pagenum">05</div><div class="sec-mark"><b>DR.ORFLI</b> · The Aquapark</div>
+  <div class="wrap reveal">
+    <span class="eyebrow">Aquamania Jungle Park</span>
+    <h2 class="h-title">35,000 m² of thrills — <em>and it’s included.</em></h2>
+    <p class="lead">Opened in March 2026, Aquamania Jungle Park brings 28 new-generation waterslides to the Red Sea — for guests of all ages — as part of the resort’s Ultra All-Inclusive offering.</p>
+    <div class="stats">
+      <div><div class="n">35,000</div><div class="l">Square Metres</div></div>
+      <div><div class="n">28</div><div class="l">Waterslides</div></div>
+      <div><div class="n">350m</div><div class="l">Water Coaster</div></div>
+      <div><div class="n">MENA 1st</div><div class="l">HIVE &amp; SwitchBACK</div></div>
+    </div>
+    <div class="rides">
+      <div class="ride"><div class="rk">Headline ride</div><div class="rn">350m Water Coaster</div><div class="rd">A RocketBLAST coaster spanning walkways and guest areas — the park’s longest, most cinematic ride.</div></div>
+      <div class="ride"><div class="rk">Middle East first</div><div class="rn">HIVE 20 (×2)</div><div class="rd">MENA’s first pair of HIVE 20 features — high speed, helix turns and sweeping sightlines.</div></div>
+      <div class="ride"><div class="rk">Region first</div><div class="rn">SwitchBACK</div><div class="rd">The region’s first SwitchBACK duo — quick turns and near-zero-G immersion.</div></div>
+      <div class="ride"><div class="rk">Race your family</div><div class="rn">RallyRACER</div><div class="rd">A towering four-lane mat racer — side-by-side adrenaline for friends and family.</div></div>
+      <div class="ride"><div class="rk">A regional first</div><div class="rn">Hive Tubing Ride</div><div class="rd">A tubing ride powered by Hive Technology — the first installation of its kind in the Middle East.</div></div>
+      <div class="ride"><div class="rk">For little ones</div><div class="rn">Ride House Splash</div><div class="rd">A dedicated splash zone for younger children, with separate ride areas grouped by age.</div></div>
+    </div>
+    <div class="callout"><div class="ct">Do you need to reserve the water park?</div><p><span class="badge-yes">The honest answer</span><br>Access to Aquamania Jungle Park is <span class="gold">included in your Ultra All-Inclusive stay</span> — no separate ticket, no entry fee. Official sources state the park is bundled into the single all-inclusive rate. General access is free-flow; certain slides simply have the usual height/age safety rules, confirmed on the spot by the aquapark team. A food court and kiosks let you stay all day.</p></div>
+    <p class="body"><strong>Operating hours:</strong> daily hours are seasonal; I recommend confirming the day’s schedule with Guest Relations on arrival (contact details on the Links page). <strong>Built by ProSlide</strong>, a global leader in water-ride design.</p>
+    <div>
+      <a class="src" href="https://www.businesstraveller.com/news/rixos-radamis-sharm-el-sheikh-opens-aquamania-jungle-park/" target="_blank" rel="noopener">Source · Business Traveller</a>
+      <a class="src" href="https://blooloop.com/proslide-aquamania-jungle-park-rixos/" target="_blank" rel="noopener">Source · ProSlide / Blooloop (ride details)</a>
+      <a class="src" href="https://www.rixos.com/hotel-resort/rixos-radamis-sharm-el-sheikh" target="_blank" rel="noopener">Source · Rixos Official</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BEACH / POOLS / PAGE 6 ================= -->
+<section id="beach">
+  <div class="pagenum">06</div><div class="sec-mark"><b>DR.ORFLI</b> · Beach · Pools · Play</div>
+  <div class="wrap reveal">
+    <span class="eyebrow">Sea, sun &amp; sport</span>
+    <h2 class="h-title">A private beach &amp; <em>days full of life.</em></h2>
+    <p class="lead">Beyond the slides, your days flow between a private Red Sea beach, year-round outdoor pools, poolside &amp; beach bars, and a packed programme of sport and evening entertainment.</p>
+    <div class="grid g3">
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M2 18s3-2 5 0 3 0 5 0 3-2 5 0 3 0 0 0"/><path d="M2 22h20"/><circle cx="12" cy="7" r="3"/></svg></div><h3>Private Beach</h3><p>First-row, private Red Sea beach in a calm bay — soft sand, loungers and easy reef snorkelling straight off the shore.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 16c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2"/><path d="M5 12V6a3 3 0 0 1 6 0"/></svg></div><h3>Year-Round Pools</h3><p>Outdoor swimming pools open all year, with a Pool Bar serving cocktails, smoothies &amp; soft drinks all afternoon.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M6 9l6-6 6 6M4 12h16M7 12v9M17 12v9"/></svg></div><h3>Exclusive Sports Club</h3><p>Coached sessions — CrossFit, spinning, Pilates, Aqua Bike &amp; yoga — plus tennis, beach volleyball and snorkelling.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div><h3>Live Entertainment</h3><p>A year-round calendar of live shows, dance performances, bands and DJs — plus pool parties and headline concerts.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7z"/></svg></div><h3>Two Wings, One Playground</h3><p>Cross between Blue Planet &amp; Tirana via the underpass and enjoy the pools, bars and venues of both wings.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 12h4l2-7 4 14 2-7h6"/></svg></div><h3>Sports Cafés &amp; Game Rooms</h3><p>Casual sports cafés and game rooms across the resort keep teens and grown-ups entertained between dips.</p></div>
+    </div>
+    <div>
+      <a class="src" href="https://www.rixos.com/hotel-resort/rixos-radamis-sharm-el-sheikh" target="_blank" rel="noopener">Source · Rixos Official (Activities &amp; Sports)</a>
+      <a class="src" href="https://allinclusive-collection.com/hotel/rixos-radamis-sharm-el-sheikh/" target="_blank" rel="noopener">Source · All Inclusive Collection</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= KIDS / PAGE 7 ================= -->
+<section id="kids">
+  <div class="pagenum">07</div><div class="sec-mark"><b>DR.ORFLI</b> · Family &amp; Kids</div>
+  <div class="wrap reveal">
+    <span class="eyebrow">For the little ones</span>
+    <h2 class="h-title">A children’s world — <em>the part families love most.</em></h2>
+    <p class="lead">Guests consistently praise the kids’ programme and entertainment team. From a role-play children’s “town” to a beachfront club, mornings to evenings are full of supervised fun.</p>
+    <div class="grid g3">
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l7-4 7 4v13M10 21v-5h4v5"/></svg></div><h3>Rixy Kids Town</h3><p>A miniature “Country of Children” where kids role-play professions, create and play — building motor, social &amp; creative skills.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M2 20s3-3 6-3 4 3 8 3 6-3 6-3"/><circle cx="9" cy="7" r="3"/></svg></div><h3>Rixy Kids Club · Beach</h3><p>A dedicated beachfront club with games and activities for the youngest guests, by the sea.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 19h16M6 19v-7l6-4 6 4v7"/><path d="M9 19v-4h6v4"/></svg></div><h3>Playground · 4–12</h3><p>An outdoor space for ages 4–12 with games, competitions and sports — with dedicated spaces for kids and teens.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 19l7-7-3-3-7 7v3h3z"/><path d="M5 19h3"/></svg></div><h3>Arts &amp; Crafts</h3><p>Face-painting, crown-making and creative workshops — followed by movie nights with favourite cartoons &amp; Disney films.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 7h16v12H4z"/><path d="M8 7V5a4 4 0 0 1 8 0v2"/></svg></div><h3>Rixy Kids Restaurant</h3><p>A child-friendly restaurant with playful indoor &amp; outdoor spaces that make mealtimes an adventure.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l9 4-9 4-9-4 9-4z"/><path d="M3 11l9 4 9-4M3 15l9 4 9-4"/></svg></div><h3>Edutainment Programme</h3><p>A morning-to-evening timetable of competitions, crafts, cinema and sports — play that gently builds young minds.</p></div>
+    </div>
+    <div class="callout"><div class="ct">Why I recommend it for your family</div><p>Recent verified guest reviews repeatedly thank the entertainment team and call the Rixy Club “very well organised.” For a family holiday, this is exactly the energy you want.</p></div>
+    <div>
+      <a class="src" href="https://www.rixos.com/hotel-resort/rixos-radamis-sharm-el-sheikh" target="_blank" rel="noopener">Source · Rixos Official (Kids)</a>
+      <a class="src" href="https://all.accor.com/hotel/C158/index.en.shtml" target="_blank" rel="noopener">Source · Accor verified reviews</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SPA / PAGE 8 ================= -->
+<section id="spa">
+  <div class="pagenum">08</div><div class="sec-mark"><b>DR.ORFLI</b> · Spa &amp; Wellness</div>
+  <div class="wrap reveal">
+    <span class="eyebrow">Rest &amp; recharge</span>
+    <h2 class="h-title">Anjana Spa &amp; a <em>complimentary Turkish hammam.</em></h2>
+    <p class="lead">A spacious spa for treatments, plus a lavish Turkish spa whose sauna, steam room and jacuzzi are complimentary for guests — a familiar, restorative ritual from home.</p>
+    <div class="grid g3">
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3c2 3 2 5 0 8-2-3-2-5 0-8z"/><path d="M5 13c4 0 6 3 7 8 1-5 3-8 7-8"/></svg></div><h3>Anjana Spa</h3><p>Bespoke treatments and relaxation rituals crafted by expert therapists. <span class="tag cost">Treatments — payable</span></p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 20h16M6 20v-6M10 20v-6M14 20v-6M18 20v-6M4 14c0-4 4-6 8-6s8 2 8 6"/></svg></div><h3>Turkish Hammam</h3><p>Sauna, steam room &amp; jacuzzi with <span class="gold">complimentary access</span> — total relaxation, included in your stay. <span class="tag">Included</span></p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M6 9l6-6 6 6M4 12h16M7 12v9M17 12v9"/></svg></div><h3>Radamis Gym</h3><p>A modern, fully-equipped fitness centre for every level, with personal training available from expert coaches. <span class="tag">Included</span></p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 4v4M12 16v4M4 12h4M16 12h4M6 6l3 3M15 15l3 3M18 6l-3 3M9 15l-3 3"/></svg></div><h3>Classes &amp; Yoga</h3><p>Group classes from the Exclusive Sports Club — yoga, spinning, Pilates and more — to keep you moving on holiday.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a7 7 0 0 1 14 0c0 5.5-7 10-7 10z"/><circle cx="12" cy="11" r="2.4"/></svg></div><h3>Personal Training</h3><p>Customised sessions guided by professional fitness coaches — book your preferred slots through the club.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 18 0M3 12a9 9 0 0 0 18 0"/></svg></div><h3>Salon &amp; Beauty</h3><p>On-site salon and beauty services for a polished, pampered finish to your Red Sea escape.</p></div>
+    </div>
+    <div>
+      <a class="src" href="https://www.rixos.com/hotel-resort/rixos-radamis-sharm-el-sheikh" target="_blank" rel="noopener">Source · Rixos Official (Spa &amp; Wellness)</a>
+      <a class="src" href="https://fromplacetoplace.travel/egypt/rixos-radamis/" target="_blank" rel="noopener">Source · Property Detail (hammam included)</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ / PAGE 9 ================= -->
+<section id="faq">
+  <div class="pagenum">09</div><div class="sec-mark"><b>DR.ORFLI</b> · Answers</div>
+  <div class="wrap reveal">
+    <span class="eyebrow">Frequently asked</span>
+    <h2 class="h-title">Your questions — <em>answered with evidence.</em></h2>
+    <p class="lead">No guessing. Every answer below is drawn from official Rixos / Accor sources, linked so you can verify each one yourself.</p>
+    <div class="faq">
+      <div class="qa key open">
+        <button class="q"><span class="qmark">Q.</span> I heard I need a reservation for the water park — is that true?</button>
+        <div class="a"><div class="a-inner">
+          <span class="badge-yes">No — not for the water park</span><br>
+          <strong>Access to Aquamania Jungle Park is included in your Ultra All-Inclusive stay</strong> — there is no separate ticket or fee. The “reservation” you’ve heard about refers to the resort’s <strong>à-la-carte specialty restaurants</strong>, which do use a booking system (Rixos publishes an official policy for it). You simply arrange those through <strong>Guest Relations or Reception after check-in</strong>. For the water park, general access is free-flow; individual slides only carry the usual height/age safety rules.
+          <br><a class="src" href="https://www.businesstraveller.com/news/rixos-radamis-sharm-el-sheikh-opens-aquamania-jungle-park/" target="_blank" rel="noopener">Source · Business Traveller</a>
+          <a class="src" href="https://www.rixos.com/la-carte-restaurants-reservation-policy" target="_blank" rel="noopener">Source · À-la-carte Policy</a>
+        </div></div>
+      </div>
+      <div class="qa">
+        <button class="q"><span class="qmark">Q.</span> Is the aquapark really free, or is it an extra cost?</button>
+        <div class="a"><div class="a-inner">It’s genuinely included. Official sources describe access to the 35,000 m² park and its 28 slides as <strong>bundled into the single Ultra All-Inclusive rate</strong> alongside your room, meals and entertainment. A food court and kiosks inside the park are there so you can spend the whole day without leaving.
+        <br><a class="src" href="https://www.universenewsnetwork.com/2026/03/24/aquamania-jungle-park-at-rixos-radamis-sharm-el-sheikh-is-now-open/" target="_blank" rel="noopener">Source · Press (access included)</a></div></div>
+      </div>
+      <div class="qa">
+        <button class="q"><span class="qmark">Q.</span> What exactly does “Ultra All-Inclusive” cover?</button>
+        <div class="a"><div class="a-inner">Your room; dining across the resort’s restaurants; snacks &amp; drinks; live entertainment; the kids’ clubs &amp; Rixy Kids Town; the aquapark; and complimentary access to the Turkish hammam (sauna, steam, jacuzzi). The main paid extras are spa <em>treatments</em>, the E-Sport Café, and a few premium services.
+        <br><a class="src" href="https://allinclusive-collection.com/hotel/rixos-radamis-sharm-el-sheikh/" target="_blank" rel="noopener">Source · All Inclusive Collection</a></div></div>
+      </div>
+      <div class="qa">
+        <button class="q"><span class="qmark">Q.</span> Is it family-friendly or adults-only?</button>
+        <div class="a"><div class="a-inner">Rixos Radamis is a dedicated <strong>family &amp; couples</strong> resort. If you ever want an adults-only stay, that’s the separate <em>Rixos Sharm El Sheikh 18+</em>, a short drive away — but for the aquapark and kids’ world, Radamis is the one.
+        <br><a class="src" href="https://www.rixos.com/hotel-resort/rixos-radamis-sharm-el-sheikh" target="_blank" rel="noopener">Source · Rixos Official</a></div></div>
+      </div>
+      <div class="qa">
+        <button class="q"><span class="qmark">Q.</span> How far is it from the airport, and is the beach private?</button>
+        <div class="a"><div class="a-inner">It’s about a <strong>10-minute transfer</strong> from Sharm El Sheikh International Airport — one of the shortest on the Red Sea. The resort sits on the <strong>first row of its own private beach</strong> in Nabq Bay.
+        <br><a class="src" href="https://fromplacetoplace.travel/egypt/rixos-radamis/" target="_blank" rel="noopener">Source · Property Detail</a></div></div>
+      </div>
+      <div class="qa">
+        <button class="q"><span class="qmark">Q.</span> Do the à-la-carte restaurants need booking — and how?</button>
+        <div class="a"><div class="a-inner">Yes. Specialty restaurants (e.g. Lalezar, Teppanyaki, Salt, T-Bone) run on reservations per Rixos’ official policy. The easy way: speak to <strong>Guest Relations or Reception on arrival</strong> and book your evenings for the week. Buffets need no reservation.
+        <br><a class="src" href="https://www.rixos.com/la-carte-restaurants-reservation-policy" target="_blank" rel="noopener">Source · Official Reservation Policy</a></div></div>
+      </div>
+      <div class="qa">
+        <button class="q"><span class="qmark">Q.</span> Are spa treatments included?</button>
+        <div class="a"><div class="a-inner">The Turkish hammam’s <strong>sauna, steam room and jacuzzi are complimentary</strong>. Spa <em>treatments and massages</em> (and the salon) are payable — well worth it, but good to plan for.
+        <br><a class="src" href="https://fromplacetoplace.travel/egypt/rixos-radamis/" target="_blank" rel="noopener">Source · Property Detail</a></div></div>
+      </div>
+      <div class="qa">
+        <button class="q"><span class="qmark">Q.</span> I haven’t seen many good reviews — should I worry?</button>
+        <div class="a"><div class="a-inner">It’s a large, busy, brand-new family resort, so opinions vary — but <strong>recent verified guest reviews on Accor and Booking.com are largely positive</strong>, especially from families: praise for cleanliness, the friendly staff, the food variety and the entertainment team. As with any big resort, my tips: book à-la-carte restaurants early via Guest Relations, and dine slightly before peak times. You’ll have a wonderful stay.
+        <br><a class="src" href="https://all.accor.com/hotel/C158/index.en.shtml" target="_blank" rel="noopener">Source · Accor verified reviews</a>
+        <a class="src" href="https://www.booking.com/hotel/eg/rixos-radamis-sharm-el-sheikh.html" target="_blank" rel="noopener">Source · Booking.com reviews</a></div></div>
+      </div>
+      <div class="qa">
+        <button class="q"><span class="qmark">Q.</span> What should I book, and how do I confirm details before arrival?</button>
+        <div class="a"><div class="a-inner">Book directly through <strong>Accor / ALL</strong> for the best member rates and flexibility. To arrange anything in advance — room preference, à-la-carte evenings, the day’s aquapark hours — contact the hotel’s <strong>Guest Relations</strong>: <a class="gold" href="tel:+20693710077">+20 69 371 0077</a> · <a class="gold" href="mailto:rixos.radamis@accor.com">rixos.radamis@accor.com</a>.
+        <br><a class="src" href="https://all.accor.com/hotel/C158/index.en.shtml" target="_blank" rel="noopener">Book · Accor (ALL)</a></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= USEFUL LINKS / PAGE 10 ================= -->
+<section id="links">
+  <div class="pagenum">10</div><div class="sec-mark"><b>DR.ORFLI</b> · Useful Links</div>
+  <div class="wrap reveal">
+    <span class="eyebrow">Everything in one place</span>
+    <h2 class="h-title">Official links &amp; <em>direct contacts.</em></h2>
+    <p class="lead">Every button below is live and points to an official source. Tap to explore, book, or reach the hotel directly.</p>
+    <div class="links">
+      <a class="lk" href="https://all.accor.com/hotel/C158/index.en.shtml" target="_blank" rel="noopener"><span class="lkic"><svg viewBox="0 0 24 24"><path d="M3 7l9-4 9 4-9 4-9-4zM3 12l9 4 9-4M3 17l9 4 9-4"/></svg></span><span><span class="lt">Book Now · Accor (ALL)</span><span class="ld">Official secure booking &amp; member rates</span></span><span class="arr">→</span></a>
+      <a class="lk" href="https://www.rixos.com/hotel-resort/rixos-radamis-sharm-el-sheikh" target="_blank" rel="noopener"><span class="lkic"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg></span><span><span class="lt">Official Hotel Website</span><span class="ld">Rooms, restaurants, spa &amp; facilities</span></span><span class="arr">→</span></a>
+      <a class="lk" href="https://allinclusive-collection.com/hotel/rixos-radamis-sharm-el-sheikh/" target="_blank" rel="noopener"><span class="lkic"><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 17l-6.5 3 2-7L2 9h7z"/></svg></span><span><span class="lt">All Inclusive Collection</span><span class="ld">Concept, dining hours &amp; experiences</span></span><span class="arr">→</span></a>
+      <a class="lk" href="https://www.rixos.com/la-carte-restaurants-reservation-policy" target="_blank" rel="noopener"><span class="lkic"><svg viewBox="0 0 24 24"><path d="M5 3h14v18l-7-3-7 3z"/></svg></span><span><span class="lt">À-la-carte Reservation Policy</span><span class="ld">How specialty-restaurant booking works</span></span><span class="arr">→</span></a>
+      <a class="lk" href="https://www.businesstraveller.com/news/rixos-radamis-sharm-el-sheikh-opens-aquamania-jungle-park/" target="_blank" rel="noopener"><span class="lkic"><svg viewBox="0 0 24 24"><path d="M3 16c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2"/><path d="M5 12V6a3 3 0 0 1 6 0"/></svg></span><span><span class="lt">Aquamania Jungle Park</span><span class="ld">Official park announcement &amp; details</span></span><span class="arr">→</span></a>
+      <a class="lk" href="https://www.google.com/maps/search/?api=1&query=Rixos+Radamis+Sharm+El+Sheikh+Nabq+Bay" target="_blank" rel="noopener"><span class="lkic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a7 7 0 0 1 14 0c0 5.5-7 10-7 10z"/><circle cx="12" cy="11" r="2.4"/></svg></span><span><span class="lt">Location &amp; Map</span><span class="ld">Nabq Bay, Sharm El Sheikh, Egypt</span></span><span class="arr">→</span></a>
+    </div>
+    <div class="contact">
+      <a class="cc" href="tel:+20693710077"><div class="k">Guest Relations</div><div class="v">+20 69 371 0077</div></a>
+      <a class="cc" href="mailto:rixos.radamis@accor.com"><div class="k">Hotel Email</div><div class="v">rixos.radamis@accor.com</div></a>
+      <div class="cc"><div class="k">Address</div><div class="v">Nabq Bay, Sharm El Sheikh, 46619</div></div>
+    </div>
+    <div class="callout"><div class="ct">Your concierge — DR.ORFLI</div><p>If you’d like, I can help you choose dates, a room, and pre-plan your à-la-carte evenings. Reach me any time and I’ll make it effortless.</p></div>
+    <div class="contact">
+      <a class="cc" href="https://wa.me/966570116911" target="_blank" rel="noopener"><div class="k">WhatsApp · DR.ORFLI</div><div class="v">+966 57 011 6911</div></a>
+      <a class="cc" href="mailto:info@dr-orfli.com"><div class="k">Email · DR.ORFLI</div><div class="v">info@dr-orfli.com</div></a>
+      <a class="cc" href="https://dr-orfli.com" target="_blank" rel="noopener"><div class="k">Website</div><div class="v">dr-orfli.com</div></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot-brand"><b>DR.ORFLI</b><span>Productions · Hospitality Content &amp; Concierge</span></div>
+    <hr class="rule" style="margin:26px 0" />
+    <p class="disclaimer">
+      Prepared exclusively for <strong style="color:var(--gold)">Şevval</strong> by DR.ORFLI Productions as an independent, complimentary concierge proposal. Rixos®, Aquamania Jungle Park™ and Accor® are trademarks of their respective owners; DR.ORFLI is not the hotel operator. All facts, hours and policies are summarised from official sources (Rixos.com, All&nbsp;Accor, All&nbsp;Inclusive&nbsp;Collection) and reputable press, accurate to the date of preparation — please confirm specifics (operating hours, à-la-carte bookings, rates) with the hotel’s Guest Relations before travel. Photography lives on the official galleries linked throughout this document.
+      <br><br>© 2026 DR.ORFLI Productions · <a href="https://dr-orfli.com" target="_blank" rel="noopener">dr-orfli.com</a> · <a href="mailto:info@dr-orfli.com">info@dr-orfli.com</a> · WhatsApp <a href="https://wa.me/966570116911" target="_blank" rel="noopener">+966 57 011 6911</a>
+    </p>
+    <div class="print-foot">DR.ORFLI PRODUCTIONS · PRIVATE CONCIERGE · RIXOS RADAMIS SHARM EL SHEIKH</div>
+  </div>
+</footer>
+
+<div id="toast">Link copied to clipboard</div>
+
+<script>
+/* progress bar */
+const prog=document.getElementById('progress');
+addEventListener('scroll',()=>{const h=document.documentElement;const s=h.scrollTop/(h.scrollHeight-h.clientHeight);prog.style.width=(s*100)+'%';},{passive:true});
+
+/* reveal on scroll */
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* mobile menu */
+const mt=document.getElementById('menuToggle'),nl=document.getElementById('navlinks');
+mt.addEventListener('click',()=>nl.classList.toggle('show'));
+nl.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nl.classList.remove('show')));
+
+/* scrollspy */
+const secs=[...document.querySelectorAll('section[id]')];
+const navA=[...document.querySelectorAll('.nav-links a')];
+addEventListener('scroll',()=>{let cur='';secs.forEach(s=>{if(scrollY>=s.offsetTop-140)cur=s.id;});navA.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+cur));},{passive:true});
+
+/* FAQ accordion */
+document.querySelectorAll('.qa .q').forEach(q=>{
+  q.addEventListener('click',()=>{
+    const qa=q.parentElement,a=q.nextElementSibling,open=qa.classList.contains('open');
+    document.querySelectorAll('.qa.open').forEach(o=>{if(o!==qa){o.classList.remove('open');o.querySelector('.a').style.maxHeight=null;}});
+    if(open){qa.classList.remove('open');a.style.maxHeight=null;}
+    else{qa.classList.add('open');a.style.maxHeight=a.scrollHeight+'px';}
+  });
+});
+/* open the key FAQ by default */
+window.addEventListener('load',()=>{const k=document.querySelector('.qa.key.open .a');if(k)k.style.maxHeight=k.scrollHeight+'px';});
+
+/* download PDF */
+document.getElementById('pdfBtn').addEventListener('click',()=>{
+  document.querySelectorAll('.qa').forEach(qa=>{qa.classList.add('open');const a=qa.querySelector('.a');if(a)a.style.maxHeight='none';});
+  document.querySelectorAll('.reveal').forEach(r=>r.classList.add('in'));
+  setTimeout(()=>window.print(),250);
+});
+
+/* share */
+const toast=document.getElementById('toast');
+function showToast(m){toast.textContent=m;toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),2200);}
+document.getElementById('shareBtn').addEventListener('click',async()=>{
+  const data={title:'Rixos Radamis Sharm El Sheikh — a DR.ORFLI proposal for Şevval',text:'A private concierge proposal prepared by DR.ORFLI Productions.',url:location.href};
+  try{if(navigator.share){await navigator.share(data);}else{await navigator.clipboard.writeText(location.href);showToast('Link copied to clipboard');}}
+  catch(e){try{await navigator.clipboard.writeText(location.href);showToast('Link copied to clipboard');}catch(_){showToast('Copy this page’s link to share');}}
+});
+</script>
+</body>
+</html>
