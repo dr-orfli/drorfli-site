@@ -46,10 +46,12 @@
 <nav style="position:sticky;top:0;z-index:100;background:rgba(8,9,12,0.95);backdrop-filter:blur(16px);border-bottom:1px solid rgba(201,162,75,0.15);padding:0 24px;height:64px;display:flex;align-items:center;justify-content:space-between">
   <a href="/" style="font-family:'Playfair Display',serif;font-size:1.1rem;color:#F5F6F8;text-decoration:none;display:flex;align-items:center;gap:8px"><span style="color:#C9A24B">◆</span> DR.ORFLI</a>
   <div style="display:flex;gap:16px;align-items:center">
+    <a href="/" style="font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#B6BCC8;text-decoration:none">Home</a>
     <a href="/services.html" style="font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#B6BCC8;text-decoration:none">Services</a>
     <a href="/guides/" style="font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#B6BCC8;text-decoration:none">Guides</a>
+    <a href="/dr-orfli-media-kit.html" style="font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#B6BCC8;text-decoration:none">Media Kit</a>
     <a href="/contact.html" style="font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#B6BCC8;text-decoration:none">Contact</a>
-    <a href="https://wa.me/447700900000" target="_blank" style="background:#C9A24B;color:#08090C;padding:8px 16px;border-radius:6px;font-size:0.8rem;font-weight:700;text-decoration:none;letter-spacing:0.08em">WhatsApp</a>
+    <a href="https://wa.me/966570116911?text=Hello%20DR.ORFLI%2C%20I%20want%20to%20get%20in%20touch." target="_blank" style="background:#C9A24B;color:#08090C;padding:8px 16px;border-radius:6px;font-size:0.8rem;font-weight:700;text-decoration:none;letter-spacing:0.08em">WhatsApp</a>
   </div>
 </nav>
 
@@ -70,7 +72,7 @@
           <span class="contact-icon">💬</span>
           <div class="contact-value">
             <div class="contact-label">WhatsApp (Preferred)</div>
-            <a href="https://wa.me/447700900000" target="_blank">+44 7700 900000</a>
+            <a href="https://wa.me/966570116911" target="_blank">+966 57 011 6911</a>
           </div>
         </div>
 
@@ -90,7 +92,7 @@
           </div>
         </div>
 
-        <a href="https://wa.me/447700900000" target="_blank" class="wa-btn">
+        <a href="https://wa.me/966570116911" target="_blank" class="wa-btn">
           <span>💬</span> Message on WhatsApp
         </a>
       </div>
@@ -141,8 +143,22 @@
           <label for="body">Message</label>
           <textarea id="body" name="body" placeholder="Tell us about your property and what you're looking to achieve..." required></textarea>
         </div>
-        <button type="submit" class="submit-btn">Send Message</button>
+        <div style="display:flex;gap:12px;margin-top:8px">
+          <button type="button" onclick="sendViaWhatsApp()" class="submit-btn" style="background:#25D366;flex:1">💬 Send via WhatsApp</button>
+          <button type="submit" class="submit-btn" style="flex:1">✉️ Send via Email</button>
+        </div>
       </form>
+      <script>
+      function sendViaWhatsApp(){
+        var n=document.getElementById('name').value||'';
+        var s=document.getElementById('subject').value||'';
+        var h=document.getElementById('hotel').value||'';
+        var svc=document.getElementById('service').value||'';
+        var b=document.getElementById('body').value||'';
+        var msg='Hello DR.ORFLI,\n\nName: '+n+'\nSubject: '+s+'\nHotel: '+h+'\nService: '+svc+'\n\n'+b;
+        window.open('https://wa.me/966570116911?text='+encodeURIComponent(msg),'_blank');
+      }
+      </script>
     </div>
 
   </div>

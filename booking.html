@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Book a Consultation — DR.ORFLI</title>
+  <meta name="description" content="Book a strategy consultation with DR.ORFLI — luxury hotel digital marketing specialist. Submit via WhatsApp or email.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{background:#08090C;color:#F5F6F8;font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6}
+    .container{max-width:720px;margin:0 auto;padding:0 24px}
+    .hero{padding:100px 24px 60px;text-align:center}
+    .hero-eyebrow{font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;color:#C9A24B;margin-bottom:16px}
+    .hero-title{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3rem);font-weight:700;color:#F5F6F8;margin-bottom:16px}
+    .hero-sub{color:#B6BCC8;font-size:1rem;max-width:540px;margin:0 auto}
+    .form-card{background:#0E1016;border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:40px;margin:0 0 80px}
+    .form-group{margin-bottom:18px}
+    label{display:block;font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase;color:#B6BCC8;margin-bottom:6px;font-weight:500}
+    input,textarea,select{width:100%;background:#161922;border:1px solid rgba(255,255,255,0.1);border-radius:8px;color:#F5F6F8;font-family:'Inter',sans-serif;font-size:0.9rem;padding:12px 14px;outline:none;transition:border-color 0.2s}
+    input:focus,textarea:focus,select:focus{border-color:rgba(201,162,75,0.5)}
+    textarea{resize:vertical;min-height:120px}
+    select option{background:#161922}
+    .btn-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
+    .btn-wa{background:#25D366;color:#fff;border:none;border-radius:8px;font-family:'Inter',sans-serif;font-size:0.9rem;font-weight:700;padding:14px;cursor:pointer;letter-spacing:0.04em;transition:background 0.2s}
+    .btn-wa:hover{background:#1ebe5a}
+    .btn-email{background:#C9A24B;color:#08090C;border:none;border-radius:8px;font-family:'Inter',sans-serif;font-size:0.9rem;font-weight:700;padding:14px;cursor:pointer;letter-spacing:0.04em;transition:background 0.2s}
+    .btn-email:hover{background:#E3BE63}
+    .divider{height:1px;background:rgba(255,255,255,0.07);margin:24px 0}
+    .row2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    @media(max-width:560px){.row2{grid-template-columns:1fr}.btn-row{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+
+<nav style="position:sticky;top:0;z-index:100;background:rgba(8,9,12,0.95);backdrop-filter:blur(16px);border-bottom:1px solid rgba(201,162,75,0.15);padding:0 24px;height:64px;display:flex;align-items:center;justify-content:space-between">
+  <a href="/" style="font-family:'Playfair Display',serif;font-size:1.1rem;color:#F5F6F8;text-decoration:none;display:flex;align-items:center;gap:8px"><span style="color:#C9A24B">◆</span> DR.ORFLI</a>
+  <div style="display:flex;gap:16px;align-items:center">
+    <a href="/" style="font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#B6BCC8;text-decoration:none">Home</a>
+    <a href="/services.html" style="font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#B6BCC8;text-decoration:none">Services</a>
+    <a href="/guides/" style="font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#B6BCC8;text-decoration:none">Guides</a>
+    <a href="/dr-orfli-media-kit.html" style="font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#B6BCC8;text-decoration:none">Media Kit</a>
+    <a href="/contact.html" style="font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#B6BCC8;text-decoration:none">Contact</a>
+    <a href="https://wa.me/966570116911?text=Hello%20DR.ORFLI%2C%20I%20want%20to%20book%20a%20consultation." target="_blank" style="background:#C9A24B;color:#08090C;padding:8px 16px;border-radius:6px;font-size:0.8rem;font-weight:700;text-decoration:none;letter-spacing:0.08em">WhatsApp</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <p class="hero-eyebrow">Request a Consultation</p>
+  <h1 class="hero-title">Book a Strategy Session</h1>
+  <p class="hero-sub">Tell us about your property and goals. We'll respond within 24 hours with a tailored plan.</p>
+</section>
+
+<div class="container">
+  <div class="form-card">
+    <form id="bookingForm" action="mailto:info@dr-orfli.com" method="GET" enctype="text/plain">
+      <div class="row2">
+        <div class="form-group">
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" name="name" placeholder="Mohammed Al-Rashidi" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" placeholder="you@hotel.com" required>
+        </div>
+      </div>
+      <div class="row2">
+        <div class="form-group">
+          <label for="whatsapp">WhatsApp Number</label>
+          <input type="tel" id="whatsapp" name="whatsapp" placeholder="+966 5X XXX XXXX">
+        </div>
+        <div class="form-group">
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country" placeholder="Saudi Arabia">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="company">Hotel / Company Name</label>
+        <input type="text" id="company" name="company" placeholder="Grand Palace Hotel & Resort">
+      </div>
+      <div class="form-group">
+        <label for="service">Service of Interest *</label>
+        <select id="service" name="service" required>
+          <option value="">Select a service...</option>
+          <option value="Influencer Marketing">Influencer Marketing</option>
+          <option value="Luxury Hotel Promotion">Luxury Hotel Promotion</option>
+          <option value="Reels Production">Reels Production</option>
+          <option value="Instagram Growth">Instagram Growth</option>
+          <option value="Luxury Destination Guide">Luxury Destination Guide</option>
+          <option value="Business Collaboration">Business Collaboration</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="date">Preferred Date (Optional)</label>
+        <input type="date" id="date" name="date">
+      </div>
+      <div class="form-group">
+        <label for="message">Message / Goals *</label>
+        <textarea id="message" name="message" placeholder="Tell us about your property, your target audience, and what you'd like to achieve..." required></textarea>
+      </div>
+      <div class="divider"></div>
+      <div class="btn-row">
+        <button type="button" class="btn-wa" onclick="sendBookingWhatsApp()">💬 Send via WhatsApp</button>
+        <button type="submit" class="btn-email">✉️ Send via Email</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<footer style="background:#08090C;border-top:1px solid rgba(201,162,75,0.15);padding:48px 24px;text-align:center">
+  <p style="font-family:'Playfair Display',serif;color:#C9A24B;font-size:1rem;margin:0 0 16px">◆ DR.ORFLI</p>
+  <div style="display:flex;justify-content:center;gap:24px;flex-wrap:wrap;margin-bottom:24px">
+    <a href="/" style="color:#B6BCC8;text-decoration:none;font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase">Home</a>
+    <a href="/services.html" style="color:#B6BCC8;text-decoration:none;font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase">Services</a>
+    <a href="/guides/" style="color:#B6BCC8;text-decoration:none;font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase">Guides</a>
+    <a href="/contact.html" style="color:#B6BCC8;text-decoration:none;font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase">Contact</a>
+    <a href="/privacy-policy.html" style="color:#B6BCC8;text-decoration:none;font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase">Privacy</a>
+    <a href="/terms-of-service.html" style="color:#B6BCC8;text-decoration:none;font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase">Terms</a>
+  </div>
+  <p style="color:#B6BCC8;font-size:0.75rem;margin:0">© 2026 DR.ORFLI. All rights reserved.</p>
+</footer>
+
+<script>
+function sendBookingWhatsApp(){
+  var n=document.getElementById('name').value||'';
+  var e=document.getElementById('email').value||'';
+  var w=document.getElementById('whatsapp').value||'';
+  var c=document.getElementById('country').value||'';
+  var co=document.getElementById('company').value||'';
+  var s=document.getElementById('service').value||'';
+  var d=document.getElementById('date').value||'';
+  var m=document.getElementById('message').value||'';
+  var msg='Hello DR.ORFLI, I want to book a consultation.\n\n'
+    +'Name: '+n+'\nEmail: '+e+'\nWhatsApp: '+w+'\nCountry: '+c
+    +'\nCompany/Hotel: '+co+'\nService: '+s+'\nPreferred Date: '+d
+    +'\n\n'+m;
+  window.open('https://wa.me/966570116911?text='+encodeURIComponent(msg),'_blank');
+}
+</script>
+</body>
+</html>

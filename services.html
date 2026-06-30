@@ -21,6 +21,7 @@
     .services-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px;padding:64px 0}
     .card{background:#0E1016;border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:32px;transition:border-color 0.25s,transform 0.25s}
     .card:hover{border-color:rgba(201,162,75,0.3);transform:translateY(-2px)}
+    a.card{text-decoration:none;display:block;cursor:pointer}
     .card-icon{font-size:1.75rem;margin-bottom:20px;display:block}
     .card-title{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:600;color:#F5F6F8;margin-bottom:12px}
     .card-desc{color:#B6BCC8;font-size:0.9rem;line-height:1.65}
@@ -39,10 +40,12 @@
 <nav style="position:sticky;top:0;z-index:100;background:rgba(8,9,12,0.95);backdrop-filter:blur(16px);border-bottom:1px solid rgba(201,162,75,0.15);padding:0 24px;height:64px;display:flex;align-items:center;justify-content:space-between">
   <a href="/" style="font-family:'Playfair Display',serif;font-size:1.1rem;color:#F5F6F8;text-decoration:none;display:flex;align-items:center;gap:8px"><span style="color:#C9A24B">◆</span> DR.ORFLI</a>
   <div style="display:flex;gap:16px;align-items:center">
+    <a href="/" style="font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#B6BCC8;text-decoration:none">Home</a>
     <a href="/services.html" style="font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#B6BCC8;text-decoration:none">Services</a>
     <a href="/guides/" style="font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#B6BCC8;text-decoration:none">Guides</a>
+    <a href="/dr-orfli-media-kit.html" style="font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#B6BCC8;text-decoration:none">Media Kit</a>
     <a href="/contact.html" style="font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#B6BCC8;text-decoration:none">Contact</a>
-    <a href="https://wa.me/447700900000" target="_blank" style="background:#C9A24B;color:#08090C;padding:8px 16px;border-radius:6px;font-size:0.8rem;font-weight:700;text-decoration:none;letter-spacing:0.08em">WhatsApp</a>
+    <a href="https://wa.me/966570116911?text=Hello%20DR.ORFLI%2C%20I%20want%20to%20request%20your%20services." target="_blank" style="background:#C9A24B;color:#08090C;padding:8px 16px;border-radius:6px;font-size:0.8rem;font-weight:700;text-decoration:none;letter-spacing:0.08em">WhatsApp</a>
   </div>
 </nav>
 
@@ -55,53 +58,53 @@
 <div class="container">
   <div class="services-grid">
 
-    <div class="card">
+    <a href="/contact.html?service=influencer-marketing" class="card">
       <span class="card-icon">🎯</span>
       <h2 class="card-title">Influencer Marketing</h2>
       <p class="card-desc">Drive direct hotel bookings through carefully curated influencer campaigns. We identify, brief, and manage creators who align with your property's luxury positioning — delivering authentic reach to high-intent travellers.</p>
-    </div>
+    </a>
 
-    <div class="card">
+    <a href="/contact.html?service=luxury-hotel-promotion" class="card">
       <span class="card-icon">🏨</span>
       <h2 class="card-title">Luxury Hotel Promotion</h2>
       <p class="card-desc">Tailored content strategies for five-star properties. From visual identity audits to full campaign execution, we elevate how your hotel is perceived online — across Instagram, TikTok, and beyond.</p>
-    </div>
+    </a>
 
-    <div class="card">
+    <a href="/contact.html?service=reels-production" class="card">
       <span class="card-icon">🎬</span>
       <h2 class="card-title">Reels Production</h2>
       <p class="card-desc">Cinematic short-form video content optimised for Instagram Reels and TikTok. Every frame is crafted to showcase your property at its most compelling — capturing pools, suites, restaurants, and experiences in high-impact format.</p>
-    </div>
+    </a>
 
-    <div class="card">
+    <a href="/contact.html?service=instagram-growth" class="card">
       <span class="card-icon">📈</span>
       <h2 class="card-title">Instagram Growth</h2>
       <p class="card-desc">End-to-end Instagram strategy: content calendars, caption writing, hashtag research, posting schedules, and community engagement. We turn your hotel's Instagram into a booking engine.</p>
-    </div>
+    </a>
 
-    <div class="card">
+    <a href="/guides/" class="card">
       <span class="card-icon">🗺️</span>
       <h2 class="card-title">Luxury Destination Guides</h2>
       <p class="card-desc">Multilingual, SEO-optimised digital concierge guides for resorts and destinations. Our guides serve as permanent marketing assets — driving organic discovery for Arabic, English, Turkish, and Russian-speaking audiences.</p>
-    </div>
+    </a>
 
-    <div class="card">
+    <a href="/contact.html?service=business-collaboration" class="card">
       <span class="card-icon">🤝</span>
       <h2 class="card-title">Business Collaboration</h2>
       <p class="card-desc">Strategic brand partnerships and co-marketing arrangements with complementary luxury brands. We broker and manage relationships that amplify reach for all parties — from travel influencers to five-star hotel groups.</p>
-    </div>
+    </a>
 
-    <div class="card">
+    <a href="/booking.html" class="card">
       <span class="card-icon">📅</span>
       <h2 class="card-title">Booking / Consultation Request</h2>
       <p class="card-desc">Direct access to DR.ORFLI for a strategy consultation or campaign booking. Discuss your property's goals, challenges, and target markets — then receive a bespoke plan of action. Available via WhatsApp or email.</p>
-    </div>
+    </a>
 
-    <div class="card">
+    <a href="/invoice-request.html" class="card">
       <span class="card-icon">📄</span>
       <h2 class="card-title">Invoice / Quotation Request</h2>
       <p class="card-desc">Formal proposals and detailed quotations for hotels and DMCs. All pricing is transparent and bespoke to your property's scale and objectives. Request a quotation via WhatsApp or email for a response within 24 hours.</p>
-    </div>
+    </a>
 
   </div>
 </div>
@@ -109,7 +112,7 @@
 <section class="cta-section">
   <h2 class="cta-title">Ready to Elevate Your Property?</h2>
   <p class="cta-sub">Get in touch and let's build a campaign that converts luxury travellers into loyal guests.</p>
-  <a href="https://wa.me/447700900000" target="_blank" class="btn-gold">Message on WhatsApp</a>
+  <a href="https://wa.me/966570116911" target="_blank" class="btn-gold">Message on WhatsApp</a>
   <a href="mailto:dr.medo.orfli@gmail.com" class="btn-outline">Send an Email</a>
 </section>
 
