@@ -130,9 +130,9 @@
     .wa-float{position:fixed;bottom:32px;right:24px;background:#25D366;color:#fff;border-radius:50%;width:60px;height:60px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(37,211,102,.4);z-index:999;transition:transform .2s,box-shadow .2s}
     .wa-float:hover{transform:scale(1.1);box-shadow:0 8px 36px rgba(37,211,102,.5)}
 
-    /* REVEAL ANIMATION */
-    .reveal{opacity:0;transform:translateY(30px);transition:opacity .6s ease,transform .6s ease}
-    .reveal.visible{opacity:1;transform:translateY(0)}
+    /* REVEAL ANIMATION — js-ready ensures sections visible without JS */
+    .js-ready .reveal{opacity:0;transform:translateY(30px);transition:opacity .6s ease,transform .6s ease}
+    .js-ready .reveal.visible{opacity:1;transform:translateY(0)}
   </style>
 </head>
 <body>
@@ -386,7 +386,8 @@
 
 <script>
 // Reveal on scroll
-var reveals = document.querySelectorAll('.reveal');
+document.body.classList.add('js-ready');
+  var reveals = document.querySelectorAll('.reveal');
 var io = new IntersectionObserver(function(entries) {
   entries.forEach(function(e) {
     if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
