@@ -3,88 +3,396 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DR.ORFLI</title>
+  <title>DR.ORFLI — Luxury Destination Marketing & Digital Concierge</title>
+  <meta name="description" content="DR.ORFLI creates multilingual luxury destination guides, Instagram content, Reels production, and digital concierge experiences for premium hotels and brands worldwide.">
+  <meta property="og:title" content="DR.ORFLI — Luxury Destination Marketing">
+  <meta property="og:description" content="Multilingual destination guides, Reels production, Instagram growth, and hotel digital concierge experiences by DR.ORFLI.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dr-orfli.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #000;
-      color: #fff;
-      text-align: center;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    *{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --black:#0B0C10;
+      --gold:#C9A24B;
+      --gold-light:#E3BE63;
+      --emerald:#1B4332;
+      --pearl:#FAF7F0;
+      --card:#0E1016;
+      --muted:#7C8493;
+      --text:#F5F6F8;
+      --subtext:#B6BCC8;
     }
+    html{scroll-behavior:smooth}
+    body{background:var(--black);color:var(--text);font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    a{text-decoration:none;color:inherit}
 
-    .box {
-      padding: 30px;
-      max-width: 700px;
-    }
+    /* NAV */
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(11,12,16,.9);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,.06);height:72px;display:flex;align-items:center;padding:0 32px;justify-content:space-between}
+    .nav-brand{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:600;color:var(--text);letter-spacing:-.01em}
+    .nav-brand span{color:var(--gold)}
+    .nav-links{display:flex;align-items:center;gap:28px}
+    .nav-links a{font-size:.85rem;font-weight:500;color:var(--muted);letter-spacing:.05em;text-transform:uppercase;transition:color .18s}
+    .nav-links a:hover{color:var(--gold)}
+    .nav-wa{background:var(--gold);color:var(--black)!important;padding:10px 20px;border-radius:8px;font-weight:700;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;transition:background .18s,transform .18s}
+    .nav-wa:hover{background:var(--gold-light);transform:translateY(-1px)}
+    @media(max-width:768px){.nav-links{gap:12px}.nav-links a:not(.nav-wa){display:none}}
 
-    h1 {
-      color: #4fba0c;
-      font-size: 56px;
-      margin-bottom: 20px;
-    }
+    /* HERO */
+    .hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding-top:72px}
+    .hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(27,67,50,.25) 0%,transparent 60%),radial-gradient(ellipse at 80% 20%,rgba(201,162,75,.08) 0%,transparent 50%),linear-gradient(135deg,#08090c 0%,#0b0c10 50%,#0d0e13 100%)}
+    .hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.015) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.015) 1px,transparent 1px);background-size:80px 80px;animation:gridFloat 20s ease-in-out infinite}
+    @keyframes gridFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+    .hero-content{position:relative;z-index:2;max-width:1200px;margin:0 auto;padding:0 32px;width:100%}
+    .hero-eyebrow{font-size:.75rem;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;animation:fadeUp .8s ease both}
+    .hero-title{font-family:'Playfair Display',serif;font-size:clamp(2.8rem,6vw,5.5rem);font-weight:600;line-height:1.05;margin-bottom:1.5rem;animation:fadeUp .8s ease .1s both}
+    .hero-title em{color:var(--gold);font-style:normal}
+    .hero-sub{font-size:clamp(1rem,2vw,1.2rem);color:var(--subtext);max-width:600px;line-height:1.75;margin-bottom:3rem;animation:fadeUp .8s ease .2s both}
+    .hero-ctas{display:flex;flex-wrap:wrap;gap:16px;animation:fadeUp .8s ease .3s both}
+    .btn-primary{background:var(--gold);color:var(--black);padding:16px 32px;border-radius:10px;font-weight:700;font-size:.95rem;letter-spacing:.04em;transition:all .2s;display:inline-flex;align-items:center;gap:8px}
+    .btn-primary:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 12px 40px rgba(201,162,75,.3)}
+    .btn-ghost{border:1px solid rgba(255,255,255,.15);color:var(--text);padding:16px 32px;border-radius:10px;font-weight:500;font-size:.95rem;transition:all .2s}
+    .btn-ghost:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}
+    .hero-scroll{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;color:var(--muted);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;animation:fadeIn 1s ease 1s both}
+    .hero-scroll-line{width:1px;height:60px;background:linear-gradient(to bottom,transparent,var(--gold));animation:scrollLine 1.5s ease-in-out infinite}
+    @keyframes scrollLine{0%,100%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1)}}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
 
-    p {
-      font-size: 20px;
-      line-height: 1.8;
-      margin: 12px 0;
-    }
+    /* STATS BAR */
+    .stats-bar{background:rgba(201,162,75,.05);border-top:1px solid rgba(201,162,75,.1);border-bottom:1px solid rgba(201,162,75,.1);padding:2rem 0}
+    .stats-inner{max-width:1200px;margin:0 auto;padding:0 32px;display:flex;flex-wrap:wrap;justify-content:space-around;gap:2rem}
+    .stat-item{text-align:center}
+    .stat-num{font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:600;color:var(--gold);display:block}
+    .stat-label{font-size:.8rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-top:.25rem}
 
-    a {
-      color: #4fba0c;
-      text-decoration: none;
-      font-weight: bold;
-    }
+    /* SECTIONS */
+    section{padding:6rem 0}
+    .container{max-width:1200px;margin:0 auto;padding:0 32px}
+    .section-eyebrow{font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+    .section-title{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,3rem);font-weight:600;line-height:1.15;margin-bottom:1rem}
+    .section-sub{font-size:1.05rem;color:var(--subtext);line-height:1.75;max-width:640px;margin-bottom:3rem}
 
-    a:hover {
-      text-decoration: underline;
-    }
+    /* SERVICES GRID */
+    .services-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem}
+    .service-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:2rem;transition:all .25s;position:relative;overflow:hidden}
+    .service-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(201,162,75,.05) 0%,transparent 100%);opacity:0;transition:opacity .25s}
+    .service-card:hover{border-color:rgba(201,162,75,.3);transform:translateY(-4px);box-shadow:0 20px 60px rgba(0,0,0,.4)}
+    .service-card:hover::before{opacity:1}
+    .service-icon{font-size:2rem;margin-bottom:1.25rem;display:block}
+    .service-name{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:600;margin-bottom:.75rem;color:var(--text)}
+    .service-desc{font-size:.9rem;color:var(--subtext);line-height:1.7}
 
-    .contact {
-      margin-top: 30px;
-      border-top: 1px solid #333;
-      padding-top: 20px;
-    }
+    /* GUIDES SHOWCASE */
+    .guides-wrap{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+    @media(max-width:768px){.guides-wrap{grid-template-columns:1fr}}
+    .guide-featured{background:linear-gradient(135deg,#0E1016,#131620);border:1px solid rgba(201,162,75,.2);border-radius:20px;padding:3rem;position:relative;overflow:hidden;transition:all .25s}
+    .guide-featured::after{content:'';position:absolute;top:-50%;right:-20%;width:300px;height:300px;background:radial-gradient(circle,rgba(201,162,75,.08),transparent 70%);pointer-events:none}
+    .guide-featured:hover{border-color:rgba(201,162,75,.4);transform:translateY(-4px);box-shadow:0 24px 80px rgba(0,0,0,.5)}
+    .guide-tag{display:inline-block;background:rgba(201,162,75,.15);border:1px solid rgba(201,162,75,.3);border-radius:20px;padding:4px 12px;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+    .guide-name{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:600;margin-bottom:.5rem;line-height:1.2}
+    .guide-loc{font-size:.85rem;color:var(--muted);margin-bottom:1.5rem}
+    .guide-features{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:2rem}
+    .guide-feat-chip{background:rgba(255,255,255,.05);border-radius:6px;padding:4px 10px;font-size:.75rem;color:var(--subtext)}
+    .guide-cta{display:inline-flex;align-items:center;gap:8px;color:var(--gold);font-size:.9rem;font-weight:600;letter-spacing:.04em;transition:gap .18s}
+    .guide-cta:hover{gap:14px}
+    .guide-soon{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1rem;background:rgba(255,255,255,.02);border:1px dashed rgba(255,255,255,.1);border-radius:20px;padding:3rem;text-align:center;color:var(--muted)}
+    .guide-soon h3{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--subtext)}
+
+    /* HOW IT WORKS */
+    .how-steps{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:2rem;margin-top:3rem}
+    .how-step{text-align:center;padding:2rem}
+    .how-num{font-family:'Playfair Display',serif;font-size:3rem;font-weight:700;color:rgba(201,162,75,.2);display:block;margin-bottom:1rem;line-height:1}
+    .how-title{font-size:1.05rem;font-weight:600;margin-bottom:.75rem;color:var(--text)}
+    .how-desc{font-size:.88rem;color:var(--subtext);line-height:1.7}
+
+    /* CONTACT */
+    .contact-section{background:linear-gradient(135deg,rgba(27,67,50,.15) 0%,rgba(11,12,16,0) 60%),#0B0C10;border-top:1px solid rgba(255,255,255,.06)}
+    .contact-wrap{max-width:700px;margin:0 auto;text-align:center}
+    .contact-ctas{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;margin-top:2.5rem}
+    .cta-wa{background:#128C7E;color:#fff;padding:16px 28px;border-radius:10px;font-weight:700;font-size:.95rem;display:inline-flex;align-items:center;gap:10px;transition:all .2s}
+    .cta-wa:hover{background:#075E54;transform:translateY(-2px);box-shadow:0 12px 40px rgba(18,140,126,.4)}
+    .cta-email{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);color:var(--text);padding:16px 28px;border-radius:10px;font-weight:500;font-size:.95rem;display:inline-flex;align-items:center;gap:10px;transition:all .2s}
+    .cta-email:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}
+
+    /* FOOTER */
+    footer{background:#08090C;border-top:1px solid rgba(255,255,255,.05);padding:3rem 0;text-align:center}
+    .footer-brand{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--text);margin-bottom:.5rem}
+    .footer-brand span{color:var(--gold)}
+    .footer-links{display:flex;flex-wrap:wrap;gap:2rem;justify-content:center;margin:1.5rem 0;font-size:.85rem}
+    .footer-links a{color:var(--muted);transition:color .18s}
+    .footer-links a:hover{color:var(--gold)}
+    .footer-copy{font-size:.78rem;color:#4A4F5C;margin-top:1rem}
+
+    /* WHATSAPP FLOATING */
+    .wa-float{position:fixed;bottom:32px;right:24px;background:#25D366;color:#fff;border-radius:50%;width:60px;height:60px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(37,211,102,.4);z-index:999;transition:transform .2s,box-shadow .2s}
+    .wa-float:hover{transform:scale(1.1);box-shadow:0 8px 36px rgba(37,211,102,.5)}
+
+    /* REVEAL ANIMATION */
+    .reveal{opacity:0;transform:translateY(30px);transition:opacity .6s ease,transform .6s ease}
+    .reveal.visible{opacity:1;transform:translateY(0)}
   </style>
 </head>
 <body>
-  <div class="box">
 
-    <h1>DR.ORFLI</h1>
-
-    <p>🚧 Our website is currently under maintenance.</p>
-
-    <p>
-      We are working to improve your experience and will be back online soon.
-    </p>
-
-    <div class="contact">
-      <p>
-        📧 Email:
-        <a href="mailto:info@dr-orfli.com">
-          info@dr-orfli.com
-        </a>
-      </p>
-
-      <p>
-        💬 WhatsApp:
-        <a href="https://wa.me/966570116911" target="_blank">
-          +966 57 011 6911
-        </a>
-      </p>
-
-      <p>
-        🌐 Website:
-        <a href="https://dr-orfli.com">
-          dr-orfli.com
-        </a>
-      </p>
-    </div>
-
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-brand">DR<span>.</span>ORFLI</a>
+  <div class="nav-links">
+    <a href="#services">Services</a>
+    <a href="#guides">Guides</a>
+    <a href="/dr-orfli-media-kit.html">Media Kit</a>
+    <a href="#contact">Contact</a>
+    <a href="https://wa.me/966570116911" target="_blank" rel="noopener noreferrer" class="nav-wa">💬 WhatsApp</a>
   </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">◆ Luxury Destination Marketing</div>
+    <h1 class="hero-title">
+      Where Luxury Brands<br>
+      <em>Find Their Voice</em>
+    </h1>
+    <p class="hero-sub">DR.ORFLI creates multilingual destination guides, Reels, Instagram content, and digital concierge experiences for premium hotels, resorts, and luxury brands worldwide.</p>
+    <div class="hero-ctas">
+      <a href="https://wa.me/966570116911" target="_blank" rel="noopener noreferrer" class="btn-primary">
+        💬 Start a Conversation
+      </a>
+      <a href="/guides/" class="btn-ghost">
+        View Destination Guides →
+      </a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="hero-scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <span class="stat-num">12</span>
+      <div class="stat-label">Languages</div>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">5★</span>
+      <div class="stat-label">Partner Hotels</div>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">24/7</span>
+      <div class="stat-label">Digital Concierge</div>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">∞</span>
+      <div class="stat-label">Global Reach</div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-eyebrow">What We Do</div>
+      <h2 class="section-title">Premium Services for<br>Luxury Brands</h2>
+      <p class="section-sub">From viral Reels to multilingual digital guides — every service is designed to position your brand where high-value guests are looking.</p>
+    </div>
+    <div class="services-grid reveal">
+      <div class="service-card">
+        <span class="service-icon">📖</span>
+        <div class="service-name">Luxury Destination Guides</div>
+        <p class="service-desc">Comprehensive multilingual digital guides for 5-star hotels and resorts — in 12 languages, covering every detail guests need before they arrive.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">🎬</span>
+        <div class="service-name">Reels Production</div>
+        <p class="service-desc">High-impact short-form video content crafted for maximum engagement and reach across Instagram, TikTok, and YouTube Shorts.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">📈</span>
+        <div class="service-name">Instagram Growth & Strategy</div>
+        <p class="service-desc">Sustainable, organic Instagram growth through premium content strategy, posting cadence, and community engagement for luxury brands.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">🏨</span>
+        <div class="service-name">Hotel & Resort Promotion</div>
+        <p class="service-desc">Full-service digital promotion for luxury hotels — content creation, social amplification, and influencer-grade coverage that drives bookings.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">🤝</span>
+        <div class="service-name">Influencer Marketing</div>
+        <p class="service-desc">Strategic influencer collaborations connecting luxury hotels and lifestyle brands with the right audiences across key source markets.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">🤖</span>
+        <div class="service-name">Digital Concierge Pages</div>
+        <p class="service-desc">Always-on digital concierge experiences that answer guest questions 24/7 — before, during, and after their stay.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">💼</span>
+        <div class="service-name">Business Collaboration</div>
+        <p class="service-desc">Strategic brand partnerships and co-creation projects for hotels, travel brands, and luxury lifestyle companies seeking global exposure.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">📅</span>
+        <div class="service-name">Booking & Consultation</div>
+        <p class="service-desc">Personalised travel consultation and booking support for luxury clients — private rates, room upgrades, and pre-arrival concierge service.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">📋</span>
+        <div class="service-name">Invoice & Quotation</div>
+        <p class="service-desc">Formal proposals, detailed quotations, and professional invoicing for hotel partnerships, corporate clients, and content projects.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DESTINATION GUIDES -->
+<section id="guides" style="background:#08090C;border-top:1px solid rgba(255,255,255,.05)">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-eyebrow">Destination Guides</div>
+      <h2 class="section-title">The DR.ORFLI Guide Series</h2>
+      <p class="section-sub">In-depth, multilingual digital concierge guides for the world's finest hotel properties. Every detail. Every language.</p>
+    </div>
+    <div class="guides-wrap reveal">
+      <a href="/guides/rixos/radamis/" class="guide-featured">
+        <span class="guide-tag">★★★★★ Ultra All-Inclusive</span>
+        <h3 class="guide-name">Rixos Radamis<br>Sharm El Sheikh</h3>
+        <p class="guide-loc">📍 Nabq Bay, Sharm El Sheikh, Egypt · Accor / Rixos Hotels</p>
+        <div class="guide-features">
+          <span class="guide-feat-chip">336 rooms</span>
+          <span class="guide-feat-chip">600m private beach</span>
+          <span class="guide-feat-chip">7 pools</span>
+          <span class="guide-feat-chip">12 languages</span>
+          <span class="guide-feat-chip">Aqua park</span>
+        </div>
+        <div class="guide-cta">View Complete Guide →</div>
+      </a>
+      <div class="guide-soon">
+        <span style="font-size:2rem">🌍</span>
+        <h3>More Guides Coming Soon</h3>
+        <p style="font-size:.9rem;line-height:1.6">We are developing digital concierge guides for partner hotels across Egypt, UAE, Turkey, and beyond.</p>
+        <a href="https://wa.me/966570116911" target="_blank" rel="noopener noreferrer" style="color:var(--gold);font-size:.85rem;font-weight:600;margin-top:.5rem">Request a guide for your property →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how" style="background:linear-gradient(to bottom,#0B0C10,#0d0e13)">
+  <div class="container">
+    <div class="reveal" style="text-align:center">
+      <div class="section-eyebrow">The Process</div>
+      <h2 class="section-title">How DR.ORFLI Works</h2>
+    </div>
+    <div class="how-steps reveal">
+      <div class="how-step">
+        <span class="how-num">01</span>
+        <div class="how-title">Discovery Call</div>
+        <p class="how-desc">We start with a WhatsApp or email conversation to understand your property, goals, and audience.</p>
+      </div>
+      <div class="how-step">
+        <span class="how-num">02</span>
+        <div class="how-title">Bespoke Proposal</div>
+        <p class="how-desc">A tailored digital strategy and content plan — created specifically for your brand and target markets.</p>
+      </div>
+      <div class="how-step">
+        <span class="how-num">03</span>
+        <div class="how-title">Production</div>
+        <p class="how-desc">Guide creation, Reels production, social content, and all digital assets — delivered on schedule.</p>
+      </div>
+      <div class="how-step">
+        <span class="how-num">04</span>
+        <div class="how-title">Amplification</div>
+        <p class="how-desc">Publishing, promotion, and performance tracking across DR.ORFLI channels and partner networks.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEDIA KIT + CASE STUDIES -->
+<section id="media" style="background:#08090C;border-top:1px solid rgba(255,255,255,.05)">
+  <div class="container">
+    <div class="reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center">
+      <div>
+        <div class="section-eyebrow">Media & Portfolio</div>
+        <h2 class="section-title" style="margin-bottom:1rem">Media Kit &<br>Case Studies</h2>
+        <p style="color:var(--subtext);line-height:1.75;margin-bottom:2rem">Download the DR.ORFLI media kit for audience demographics, partnership formats, case studies, and pricing information.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:1rem">
+          <a href="/dr-orfli-media-kit.html" class="btn-primary">Download Media Kit</a>
+          <a href="mailto:dr.medo.orfli@gmail.com" class="btn-ghost">Email for Case Studies</a>
+        </div>
+      </div>
+      <div style="background:rgba(255,255,255,.03);border:1px solid rgba(201,162,75,.15);border-radius:20px;padding:2.5rem">
+        <div style="font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:1.5rem">Featured Partnership</div>
+        <div style="font-family:'Playfair Display',serif;font-size:1.4rem;margin-bottom:.5rem">Rixos Radamis<br>Sharm El Sheikh</div>
+        <div style="font-size:.85rem;color:var(--muted);margin-bottom:1.5rem">Complete 12-language digital concierge guide</div>
+        <a href="/guides/rixos/radamis/" style="color:var(--gold);font-size:.9rem;font-weight:600">View Live Guide →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <div class="contact-wrap reveal">
+      <div class="section-eyebrow" style="justify-content:center;display:flex">Get in Touch</div>
+      <h2 class="section-title" style="text-align:center">Let's Build Something<br><em style="color:var(--gold);font-style:normal">Extraordinary Together</em></h2>
+      <p style="color:var(--subtext);line-height:1.75;font-size:1.05rem">Whether you represent a luxury hotel group, a lifestyle brand, or you're a traveller seeking a personalised concierge experience — DR.ORFLI responds within 24 hours.</p>
+      <div class="contact-ctas">
+        <a href="https://wa.me/966570116911" target="_blank" rel="noopener noreferrer" class="cta-wa">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp · +966 57 011 6911
+        </a>
+        <a href="mailto:dr.medo.orfli@gmail.com" class="cta-email">
+          ✉ dr.medo.orfli@gmail.com
+        </a>
+      </div>
+      <p style="font-size:.82rem;color:var(--muted);margin-top:2rem">DR.ORFLI operates in Arabic, English, Turkish, and Russian. Response guaranteed within 24 hours.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-brand">DR<span>.</span>ORFLI</div>
+    <div class="footer-links">
+      <a href="/guides/">Destination Guides</a>
+      <a href="/services.html">Services</a>
+      <a href="/dr-orfli-media-kit.html">Media Kit</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy-policy.html">Privacy Policy</a>
+      <a href="/terms-of-service.html">Terms of Service</a>
+    </div>
+    <p class="footer-copy">© 2026 DR.ORFLI. All rights reserved. · dr-orfli.com</p>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/966570116911" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="WhatsApp DR.ORFLI">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+// Reveal on scroll
+var reveals = document.querySelectorAll('.reveal');
+var io = new IntersectionObserver(function(entries) {
+  entries.forEach(function(e) {
+    if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+  });
+}, { threshold: 0.12 });
+reveals.forEach(function(r) { io.observe(r); });
+</script>
 </body>
 </html>
