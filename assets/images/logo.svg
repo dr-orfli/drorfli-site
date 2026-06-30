@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+<rect width="200" height="60" rx="8" fill="#08090C"/>
+<text x="20" y="38" font-family="Georgia,serif" font-size="14" fill="#C9A24B">◆</text>
+<text x="38" y="40" font-family="Georgia,serif" font-size="20" font-weight="700" fill="#F5F6F8">DR<tspan fill="#C9A24B">.</tspan>ORFLI</text>
+</svg>
