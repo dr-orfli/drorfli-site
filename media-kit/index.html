@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DR.ORFLI Media Kit</title>
+  <meta name="description" content="Download the official DR.ORFLI English and Arabic media kits." />
+  <style>
+    :root{
+      --bg:#070707;
+      --card:#111;
+      --text:#f5f5f5;
+      --muted:#b7b7b7;
+      --green:#2aa83a;
+      --yellow:#f1d900;
+      --line:rgba(255,255,255,.12);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Arial,Helvetica,sans-serif;
+      background:radial-gradient(circle at top left,rgba(241,217,0,.15),transparent 28%),radial-gradient(circle at bottom right,rgba(42,168,58,.18),transparent 30%),var(--bg);
+      color:var(--text);
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:34px 18px;
+    }
+    .wrap{width:100%;max-width:920px;text-align:center}
+    .brand{letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-size:12px;margin-bottom:18px}
+    .logo{
+      width:112px;height:112px;border:2px solid rgba(255,255,255,.75);border-radius:50%;
+      margin:0 auto 24px;display:flex;align-items:center;justify-content:center;
+      font-weight:900;font-size:22px;line-height:1.05;background:rgba(255,255,255,.03);
+    }
+    h1{font-size:clamp(34px,6vw,64px);line-height:1.03;margin:0 0 14px;font-weight:900}
+    .accent{width:120px;height:6px;border-radius:99px;background:linear-gradient(90deg,var(--yellow),var(--green));margin:24px auto}
+    .sub{max-width:680px;margin:0 auto 34px;color:var(--muted);font-size:17px;line-height:1.7}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:26px}
+    .card{
+      background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.03));
+      border:1px solid var(--line);border-radius:24px;padding:28px;text-align:left;
+      box-shadow:0 24px 60px rgba(0,0,0,.25);
+    }
+    .flag{font-size:34px;margin-bottom:12px}
+    .card h2{margin:0 0 8px;font-size:24px}
+    .card p{margin:0 0 22px;color:var(--muted);line-height:1.6}
+    .btn{
+      display:inline-block;text-decoration:none;background:#fff;color:#050505;font-weight:800;
+      padding:14px 18px;border-radius:12px;min-width:210px;text-align:center;
+    }
+    .btn.secondary{background:linear-gradient(90deg,var(--yellow),var(--green));color:#050505}
+    .footer{margin-top:32px;color:#8e8e8e;font-size:13px;line-height:1.6}
+    .links{margin-top:14px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+    .links a{color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.25)}
+    @media(max-width:720px){.grid{grid-template-columns:1fr}.card{text-align:center}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="brand">Media · Marketing · Influence · Production</div>
+    <div class="logo">DR.ORFLI<br><span style="font-size:13px;letter-spacing:.12em">PRODUCTIONS</span></div>
+    <h1>DR.ORFLI Media Kit</h1>
+    <div class="accent"></div>
+    <p class="sub">Official company profile and commercial collaboration proposal for hotels, resorts, tourism boards, luxury brands, restaurants, events and premium lifestyle partners.</p>
+
+    <section class="grid" aria-label="Media kit downloads">
+      <article class="card">
+        <div class="flag">🇺🇸</div>
+        <h2>English Media Kit</h2>
+        <p>Download the official English media kit for international hotel, tourism and luxury brand collaborations.</p>
+        <a class="btn" href="/media-kit/DR-ORFLI-Media-Kit-English.pdf" target="_blank" rel="noopener">Download English PDF</a>
+      </article>
+
+      <article class="card">
+        <div class="flag">🇸🇦</div>
+        <h2>الملف التعريفي العربي</h2>
+        <p dir="rtl">تحميل الملف التعريفي الرسمي باللغة العربية للتعاونات التجارية والسياحية والفندقية.</p>
+        <a class="btn secondary" href="/media-kit/DR-ORFLI-Media-Kit-Arabic.pdf" target="_blank" rel="noopener">تحميل الملف العربي</a>
+      </article>
+    </section>
+
+    <div class="footer">
+      DR.ORFLI Productions · Luxury Travel · Hospitality · Tourism · Lifestyle
+      <div class="links">
+        <a href="https://www.instagram.com/dr.orfli/" target="_blank" rel="noopener">Instagram @dr.orfli</a>
+        <a href="mailto:info@dr-orfli.com">info@dr-orfli.com</a>
+        <a href="https://wa.me/966570116911" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
