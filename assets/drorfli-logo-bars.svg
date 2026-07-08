@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 420" width="360" height="420" role="img" aria-label="DR.ORFLI logo bars">
+  <defs>
+    <linearGradient id="yellow" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffe900"/>
+      <stop offset="1" stop-color="#ffd500"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#49bf25"/>
+      <stop offset="1" stop-color="#209b27"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="1.4" flood-color="#000" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+  <rect width="360" height="420" fill="none"/>
+  <g filter="url(#shadow)">
+    <rect x="38" y="130" width="17" height="155" rx="8.5" fill="url(#yellow)"/>
+    <rect x="86" y="100" width="18" height="215" rx="9" fill="url(#yellow)"/>
+    <rect x="136" y="58" width="23" height="300" rx="11.5" fill="url(#yellow)"/>
+    <rect x="192" y="32" width="25" height="330" rx="12.5" fill="url(#yellow)"/>
+    <rect x="248" y="18" width="25" height="355" rx="12.5" fill="url(#green)"/>
+    <rect x="304" y="0" width="25" height="405" rx="12.5" fill="url(#green)"/>
+  </g>
+</svg>
