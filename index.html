@@ -42,7 +42,8 @@
     .nav-links a:hover{color:var(--gold)}
     .nav-wa{background:var(--gold);color:var(--black)!important;padding:10px 20px;border-radius:8px;font-weight:700;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;transition:background .18s,transform .18s}
     .nav-wa:hover{background:var(--gold-light);transform:translateY(-1px)}
-    @media(max-width:768px){.nav-links{gap:12px}.nav-links a:not(.nav-wa){display:none}}
+    @media(max-width:768px){.nav-links{gap:12px}.nav-links a:not(.nav-wa):not(.nav-videos){display:none}}
+    .nav-videos{color:var(--gold)!important}
 
     /* HERO */
     .hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding-top:72px}
@@ -138,6 +139,19 @@
     .reveal{transition:transform .6s ease}
     .js-ready .reveal{transform:translateY(20px)}
     .js-ready .reveal.visible{transform:translateY(0)}
+    /* VIDEO PROMO */
+    .vpromo{padding:90px 0;background:radial-gradient(ellipse at 15% 50%,rgba(201,162,75,.14),transparent 55%),#090a0e;border-top:1px solid rgba(255,255,255,.06)}
+    .vpromo-inner{max-width:1200px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}
+    .vpromo h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);font-weight:600;line-height:1.1;margin:10px 0 16px}
+    .vpromo h2 em{color:var(--gold);font-style:normal}
+    .vpromo p{color:var(--subtext);line-height:1.7;margin-bottom:26px}
+    .vpromo .eye{font-size:.72rem;letter-spacing:.25em;text-transform:uppercase;color:var(--gold)}
+    .vp-btns{display:flex;flex-wrap:wrap;gap:12px}
+    .vp-player{position:relative;aspect-ratio:16/9;border-radius:18px;overflow:hidden;cursor:pointer;border:1px solid rgba(255,255,255,.1);box-shadow:0 30px 80px rgba(0,0,0,.5);background:#000}
+    .vp-player img{width:100%;height:100%;object-fit:cover;display:block}
+    .vp-player .vp-play{position:absolute;inset:0;margin:auto;width:76px;height:54px;border-radius:16px;border:0;background:rgba(201,162,75,.95);font-size:1.3rem;cursor:pointer}
+    .vp-player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+    @media(max-width:860px){.vpromo-inner{grid-template-columns:1fr}}
   </style>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"DR.ORFLI","url":"https://dr-orfli.com","description":"DR.ORFLI creates multilingual luxury destination guides, Instagram content, Reels production, and digital concierge experiences for premium hotels and brands worldwide.","telephone":"+966570116911","email":"dr.medo.orfli@gmail.com","serviceType":["Luxury Destination Marketing","Reels Production","Instagram Growth","Hotel Promotion","Digital Concierge"],"areaServed":"Worldwide","sameAs":["https://www.instagram.com/dr.orfli"]}</script>
 </head>
@@ -147,6 +161,7 @@
 <nav>
   <a href="/" class="nav-brand">DR<span>.</span>ORFLI</a>
   <div class="nav-links">
+    <a href="/videos.html" class="nav-videos">▶ Videos</a>
     <a href="#services">Services</a>
     <a href="#guides">Guides</a>
     <a href="/dr-orfli-media-kit.html">Media Kit</a>
@@ -369,12 +384,32 @@
   </div>
 </section>
 
+<!-- VIDEO PROMO (above footer) -->
+<section class="vpromo">
+  <div class="vpromo-inner">
+    <div>
+      <span class="eye">New on YouTube</span>
+      <h2>Don't just read about it. <em>Watch it.</em></h2>
+      <p>JINELJANE music videos with KALBO &amp; JIN, cinematic soundtracks and long mixes: a new DR.ORFLI drop lands on YouTube every week. Press play, then subscribe so you're first for the next one.</p>
+      <div class="vp-btns">
+        <a class="btn-primary" href="https://www.youtube.com/@DRORFLI?sub_confirmation=1" target="_blank" rel="noopener">🔔 Subscribe</a>
+        <a class="btn-ghost" href="/videos.html">♫ Listen &amp; watch all</a>
+      </div>
+    </div>
+    <div class="vp-player" data-id="f_q1kxsSBSc" role="button" tabindex="0" aria-label="Play the latest DR.ORFLI video">
+      <img loading="lazy" src="https://i.ytimg.com/vi/f_q1kxsSBSc/hqdefault.jpg" alt="">
+      <button class="vp-play" tabindex="-1" aria-hidden="true">▶</button>
+    </div>
+  </div>
+</section>
+
 <!-- FOOTER -->
 <footer>
   <div class="container">
     <div class="footer-brand">DR<span>.</span>ORFLI</div>
     <div class="footer-links">
       <a href="/guides/">Destination Guides</a>
+      <a href="/videos.html">Videos</a>
       <a href="/services.html">Services</a>
       <a href="/dr-orfli-media-kit.html">Media Kit</a>
       <a href="/contact.html">Contact</a>
@@ -400,6 +435,10 @@ var io = new IntersectionObserver(function(entries) {
   });
 }, { threshold: 0.12 });
 reveals.forEach(function(r) { io.observe(r); });
+</script>
+<script>
+// Video promo: load YouTube only on click
+(function(){var p=document.querySelector('.vp-player');if(!p)return;function go(){if(p.querySelector('iframe'))return;var f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/'+p.dataset.id+'?autoplay=1&rel=0';f.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';f.allowFullscreen=true;f.title='YouTube video player';p.appendChild(f);}p.addEventListener('click',go);p.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();go();}});})();
 </script>
 </body>
 </html>
